@@ -2,7 +2,7 @@ site_name: Sam Bell's Portfolio
 site_url: https://sambell2.github.io
 site_description: My portfolio to display all of my programming and electronics projects.
 site_author: Sam Bell
-site_dir: build/
+site_dir: docs/
 docs_dir: src/
 theme:
   features:
