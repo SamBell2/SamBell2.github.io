@@ -1,6 +1,5 @@
-# Welcome to MkDocs
+# Welcome to my portfolio!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
