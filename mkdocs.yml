@@ -1,0 +1,29 @@
+site_name: Sam Bell's Portfolio
+site_url: https://sambell2.github.io
+site_description: My portfolio to display all of my programming and electronics projects.
+site_author: Sam Bell
+site_dir: build/
+docs_dir: src/
+theme:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+  icon:
+    logo: material/food
+  name: cinder
+  palette:
+    - scheme: default
+      primary: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+#plugins:
+#- search
+#- offline
+#- tags:
+#  tags_file: tags.md
