@@ -2,42 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sambell2.github.io/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
-         <loc>https://sambell2.github.io/Both%21/laptop/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <loc>https://sambell2.github.io/gallery/</loc>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
-         <loc>https://sambell2.github.io/Both%21/magic_mirror/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <loc>https://sambell2.github.io/Digital%20Making/laptop/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sambell2.github.io/Digital%20Making/magic_mirror/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sambell2.github.io/Digital%20Making/wildlife_camera/</loc>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Electronics/cpu/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Electronics/safe/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Programming/chess_bot/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Programming/morse_code/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Programming/qr_code_generator/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sambell2.github.io/Programming/scripted_journeys/</loc>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
          <loc>https://sambell2.github.io/Programming/sudoku_solver/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <lastmod>2025-10-29</lastmod>
     </url>
     <url>
-         <loc>https://sambell2.github.io/WER/WER2025/</loc>
-         <lastmod>2025-10-28</lastmod>
+         <loc>https://sambell2.github.io/Robotics/WER2025/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sambell2.github.io/Robotics/camjam/</loc>
+         <lastmod>2025-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://sambell2.github.io/Robotics/picar/</loc>
+         <lastmod>2025-10-29</lastmod>
     </url>
 </urlset>
