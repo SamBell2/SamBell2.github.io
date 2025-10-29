@@ -44,7 +44,7 @@ hide:
 
 ## Get in Touch
 - **Email:** samgbell2011@icloud.com
-- **Phone:** 
+- **Phone:** 07468779147
 - **Portfolio:** <https://sambell2.github.io>
 
 ### [View My Full Portfolio ➜](gallery)
