@@ -6,13 +6,16 @@ hide:
 
 # **Sam Bell**
 
+![An image of me](images/me.png)
+
 ---
 
 ## About Me
+I am a 14 year old electronics and programming enthusiast. I love computer science and everything related to digital making, and have since I learnt the basics of Python when I was 8. Since then, it has become my main hobby and the direction I want my career to go in. In 2020, I got my first Raspberry Pi and learnt about electronics. Recently I realised that digital making and robotics combine both of my main interests, and those are what I'm focussing on now.
 
 ---
 
-## Featured Projects
+## My Favourite Projects
 
 | **Project**                       | **Description**                                                                     | **Link**                              |
 |-----------------------------------|-------------------------------------------------------------------------------------|---------------------------------------|
@@ -26,8 +29,8 @@ hide:
 
 ### **Technical Skills**
 - **Programming**: Python, Java, HTML/CSS
-- **Electronics**: Soldering, PCB Design
-- **Tools**: Git, Raspberry Pi, Autodesk Inventor
+- **Electronics**: Soldering, PCB Design (KiCad)
+- **Tools**: Git, Raspberry Pi, CAD (Autodesk Inventor & OpenSCAD)
 
 ### **Soft Skills**
 - Problem Solving
