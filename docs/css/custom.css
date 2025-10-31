@@ -1,0 +1,26 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.gallery a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery a:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+/*.navbar-right {
+    display: none;
+}*/
+.col-md-3 {
+    display: none;
+}
