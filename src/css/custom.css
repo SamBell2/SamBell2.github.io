@@ -7,9 +7,9 @@
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
 }
 .gallery a {
+  border-radius: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -18,9 +18,6 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-/*.navbar-right {
-    display: none;
-}*/
 .col-md-3 {
     display: none;
 }
