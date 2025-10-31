@@ -11,6 +11,8 @@ theme:
   #icon:
   #  logo: material/food
   name: cinder
+  disable_nav_previous_next: true
+  disable_footer: true
 #  palette:
 #    - scheme: default
 #      primary: deep orange
@@ -28,3 +30,5 @@ plugins:
 #- offline
 #- tags:
 #  tags_file: tags.md
+extra_css:
+  - css/custom.css
