@@ -9,6 +9,9 @@
   height: auto;
 }
 .gallery a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   border-radius: 6px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -18,6 +21,9 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-.col-md-3 {
+/*.col-md-3 {
     display: none;
+}*/
+.bs-sidebar {
+  display: none;
 }
