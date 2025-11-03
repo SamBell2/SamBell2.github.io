@@ -5,4 +5,4 @@ hide:
  - toc
 ---
 # Morse Code Translator
-![An image of my morse code translator](images/morsecode.png)
+![An image of my morse code translator](images/morse.png)

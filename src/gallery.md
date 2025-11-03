@@ -7,7 +7,7 @@ hide:
 
 <div class="gallery">
   <a href="../programming/chess_bot"><img src="../programming/images/chessbot.png" alt="Chess Bot">My chess bot</a>
-  <a href="../electronics/CPU"><img src="../electronics/images/cpu.png" alt="CPU">An 8-bit CPU</a>
+  <a href="../electronics/cpu"><img src="../electronics/images/cpu.png" alt="CPU">An 8-bit CPU</a>
   <a href="../robotics/WER2025"><img src="../robotics/images/WER2025.png" alt="Robotics Competition">An international robotics competition</a>
   <a href="../digital_making/light_fantastic"><img src="../digital_making/images/lightfantastic.png" alt="Illuminated Button Matrix">An illuminated button matrix</a>
   <a href="../programming/qr_code_generator"><img src="../programming/images/qrcode.png" alt="QR Code Generator">My QR code generator</a>

@@ -41,7 +41,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 ---
 
 ## Recent Achievements
-- **4th place** in an international robotics competition
+- **British champion** in an international robotics competition
 - **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/)
 
 ---
