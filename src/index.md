@@ -43,6 +43,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 ## Recent Achievements
 - **British champion** in an international robotics competition
 - **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/)
+- Predicted **Grade 9** in GCSE Computer Science
 
 ---
 
