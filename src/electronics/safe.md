@@ -8,7 +8,7 @@ hide:
 ![An image of my safe](images/safe.png)
 *My finished safe*
 ## Overview
-This is my first large electronics project; it is a homemade safe with a 4-bit code to unlock the electromagnet. I sawed the MDF sheets and screwed them together, before adding an electromagnet inside and some metal washers on the door. On top are the electronics, which consist of a 4.5V battery pack, a DIP (Dual Inline Package) switch, 4 AND gates, 6 NOT gates, a transistor, a relay and a 12V battery.
+This is my first large electronics project: I made it when I was 9! It is a homemade safe with a 4-bit code to unlock the electromagnet. I sawed the MDF sheets and screwed them together, before adding an electromagnet inside and some metal washers on the door. On top are the electronics, which consist of a 4.5V battery pack, a DIP (Dual Inline Package) switch, 4 AND gates, 6 NOT gates, a transistor, a relay and a 12V battery.
 ![The schematic](images/safe.svg)
 *A schematic diagram of how the electronics work*
 ## My Aim
