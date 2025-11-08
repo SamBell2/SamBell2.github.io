@@ -6,6 +6,7 @@ hide:
 ---
 # CPU
 ![An image of my CPU](images/cpu.png)
+## Overview
 This is my current project, it is an 8-bit CPU built out of individual ICs (Integrated Circuits). I got the idea in my Computer Science lessons at school, where I learnt how a CPU works and realised that it isn't actually as complex as I thought. I then started to make parts of it to test in Minecraft, before finding [Ben Eater's similar project](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) and using that as a guide to making the basic parts of the computer.
 ## Specs
 * 6 - 48 Hz variable clock speed
