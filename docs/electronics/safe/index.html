@@ -220,12 +220,50 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#safe">Safe</a></li>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+            <li class="second-level"><a href="#my-aim">My Aim</a></li>
+                
+            <li class="second-level"><a href="#how-it-works">How it works</a></li>
+                
+            <li class="second-level"><a href="#challenges">Challenges</a></li>
+                
+            <li class="second-level"><a href="#what-i-would-change">What I would change</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="safe">Safe</h1>
-<p><img alt="An image of my safe" src="../images/safe.png" /></p></div>
+<p><img alt="An image of my safe" src="../images/safe.png" />
+<em>My finished safe</em></p>
+<h2 id="overview">Overview</h2>
+<p>This is my first large electronics project; it is a homemade safe with a 4-bit code to unlock the electromagnet. I sawed the MDF sheets and screwed them together, before adding an electromagnet inside and some metal washers on the door. On top are the electronics, which consist of a 4.5V battery pack, a DIP (Dual Inline Package) switch, 4 AND gates, 6 NOT gates, a transistor, a relay and a 12V battery.
+<img alt="The schematic" src="../images/safe.svg" />
+<em>A schematic diagram of how the electronics work</em></p>
+<h2 id="my-aim">My Aim</h2>
+<p>I wanted to make a safe with a door that locked, and you could only open it if you know the code. I mostly achieved that goal, as there is some resistance to the door when it is locked, but none when unlocked. However, it isn't a very safe safe as the electromagnet isn't very strong so you can just pull the door open, or you could just unplug the batteries.</p>
+<h2 id="how-it-works">How it works</h2>
+<ol>
+<li>There are 4 switches, each of which is on or off,</li>
+<li>The 1st, 3rd and 4th switches are inverted,</li>
+<li>The outputs of the inverters and the 2nd switch are ANDed together.<br/>
+   This means that the output of this is only on if the 1st input is off, the 2nd input is on, and the 3rd and 4th inputs are off.</li>
+<li>The output of this switches a transistor to increase current,</li>
+<li>The output of the transistor switches a relay to increase voltage,</li>
+<li>The relay switches the electromagnet,</li>
+<li>The electromagnet pulls of washers glued to the inside of the door to close it</li>
+</ol>
+<h2 id="challenges">Challenges</h2>
+<p>It was my first large DIY project so I had to learn to use a saw and a drill safely, as well as the electronics. The main problem I had with the electronics was that I had forgotten pull-down resistors, so the inputs were floating (no definite value) when the switches were off. I eventually Googled the problem and put the resistors in and it worked, but I didn't realise why until I started making my <a href="../cpu">CPU</a>.</p>
+<h2 id="what-i-would-change">What I would change</h2>
+<p>If I built it again now, I would change a few things:</p>
+<ul>
+<li>I would use a solenoid pushing into a hole instead of an electromagnet.</li>
+<li>I would use a PCB to stop people unplugging wires.</li>
+<li>I would place all of the electronics inside the safe, with only the switches on top.</li>
+<li>I would use more switches, e.g. a 10-bit code</li>
+</ul></div>
         
         
     </div>
