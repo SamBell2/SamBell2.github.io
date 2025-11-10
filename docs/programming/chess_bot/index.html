@@ -220,12 +220,35 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#chess-bot">Chess Bot</a></li>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+            <li class="second-level"><a href="#inspiration">Inspiration</a></li>
+                
+            <li class="second-level"><a href="#how-it-works">How it works</a></li>
+                
+            <li class="second-level"><a href="#key-features">Key Features</a></li>
+                
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
 <h1 id="chess-bot">Chess Bot</h1>
-<p><img alt="An image of my chess bot running" src="../images/chessbot.png" /></p></div>
+<p><img alt="An image of my chess bot running" src="../images/chessbot.png" />
+<em>A <a href="https://lichess.org/h98ou7COBKNf">Lichess.org</a> game where my bot won</em></p>
+<h2 id="overview">Overview</h2>
+<p>I created a Java program that can play chess. It generates all legal moves and evaluates them, giving them points. It then plays the highest-ranking move. I have given it a UCI (Universal Chess Interface) frontend so it can interact with other chess apps. For example, I have given it a Lichess account (<a href="https://lichess.org/@/SamFish96">SamFish96</a>) and occasionally it is online.You can see the source code on <a href="https://github.com/SamBell2/SamFish">GitHub</a>.</p>
+<h2 id="inspiration">Inspiration</h2>
+<p>I've been interested in complex decision making programs for a while, and a chess bot was a suitably complex but not overwhelming introduction to them.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>It uses an 8x8 array of pieces or empty squares to represent the board. Whenever the chess app tells it that a move has been made, it simulates the move on its own board. When it needs to move one of its pieces, it looks at all of the possible moves that it can make, discards any that put it in check, then evaluates all of them. If it has time, it looks at the next turn or two as well. It then picks the move it thinks is best and plays it.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Generates almost all possible moves.</li>
+<li>Uses <a href="https://syzygy-tables.info/">syzygy tablebases</a> for the endgame to ensure perfect moves.</li>
+<li>Detects checks, checkmates, stalemates and threefold repetition.</li>
+<li>Automatic detailed logging to see the bot's logic.</li>
+<li>Interacts with the Lichess bot API to play online.</li>
+</ul></div>
         
         
     </div>
