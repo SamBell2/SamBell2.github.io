@@ -19,10 +19,10 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 
 | **Project**                       | **Description**                                                                     | **Link**                              |
 |-----------------------------------|-------------------------------------------------------------------------------------|---------------------------------------|
-| Chess Bot                         | I created a fully-functional lookahead evaluation chess bot                         | [View Project](programming/chess_bot) |
-| CPU                               | A simple 8-bit CPU that I am currently making                                       | [View Project](electronics/cpu)       |
-| QR Code Generator                 | I made a v5 QR code generator in python                                             | [View Project](programming/qr_code_generator)       |
-| WER 2025                          | An international robotics competition where I came 1st in the UK in my age category | [More information](robotics/WER2025)  |
+| Chess Bot                         | I created a fully-functional lookahead evaluation chess bot                         | [View Project](programming/chess_bot.md) |
+| CPU                               | A simple 8-bit CPU that I am currently making                                       | [View Project](electronics/cpu.md)       |
+| QR Code Generator                 | I made a v5 QR code generator in python                                             | [View Project](programming/qr_code_generator.md)       |
+| WER 2025                          | An international robotics competition where I came 1st in the UK in my age category | [More information](robotics/WER2025.md)  |
 
 ---
 
@@ -42,7 +42,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 
 ## Recent Achievements
 - **British champion** in an international robotics competition
-- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/)
+- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"}
 - Predicted **Grade 9** in GCSE Computer Science
 
 ---
@@ -52,4 +52,4 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 - **Phone:** 07468779147
 - **Portfolio:** <https://sambell2.github.io>
 
-### [View My Full Portfolio ➜](gallery)
+### [View My Full Portfolio ➜](gallery.md)
