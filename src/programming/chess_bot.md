@@ -19,3 +19,8 @@ It uses an 8x8 array of pieces or empty squares to represent the board. Whenever
 * Detects checks, checkmates, stalemates and threefold repetition.
 * Automatic detailed logging to see the bot's logic.
 * Interacts with the Lichess bot API to play online.
+## Improvements
+* Add castling and en passant capabilities
+* Increase speed
+## Challenges
+I learnt a lot about Java, as before I had mainly programmed in Python. In particular, I use interfaces quite a bit. Looking for checks, checkmates, stalemates and other draws was far harder than I had anticipated, but I did eventually manage. Interacting with syzygy tables was a bit too complex for me to do (there are no Java libraries to read them) so I used an existing library called [Fathom](https://github.com/jdart1/fathom/){target="_blank" rel="noopener"} to do it.
