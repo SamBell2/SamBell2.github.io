@@ -5,6 +5,7 @@ hide:
  - toc
 ---
 # CPU
+*2025*
 ![An image of my CPU](images/cpu.png)
 *An image of my CPU so far*
 ## Overview

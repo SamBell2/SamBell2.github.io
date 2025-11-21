@@ -5,6 +5,7 @@ hide:
  - toc
 ---
 # Safe
+*2021*
 ![An image of my safe](images/safe.png)
 *My finished safe*
 ## Overview
