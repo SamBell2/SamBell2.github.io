@@ -34,9 +34,9 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 - **Tools**: Git, Raspberry Pi, CAD (Autodesk Inventor & OpenSCAD)
 
 ### **Soft Skills**
-- Problem Solving
-- Communication
-- Resilience
+- Problem Solving - I have come across many challenges across these projects and have solved almost all of them.
+- Curiosity - I have always wanted to know how things work, and I usually find this out by making it (e.g. [QR code generator](programming/qr_code_generator.md))
+- Resilience - I just refuse to give up, even if a problem takes me years to solve, such as the [Light Fantastic](digital_making/light_fantastic.md)
 
 ---
 
