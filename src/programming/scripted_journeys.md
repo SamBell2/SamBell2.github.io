@@ -7,3 +7,4 @@ hide:
 # Scripted Journeys
 *2024-2025*
 ![A screenshot of Scripted Journeys](images/scriptedjourneys.png)
+## Details coming soon!
