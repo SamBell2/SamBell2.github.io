@@ -29,7 +29,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 ## My Skills
 
 ### **Technical Skills**
-- **Programming**: Python, Java, HTML/CSS
+- **Programming**: I know how to program in many languages (e.g. C, PHP, and Go, to name a few), but my strongest are Python, Java and HTML/CSS.
 - **Electronics**: Soldering, PCB Design (KiCad)
 - **Tools**: Git, Raspberry Pi, CAD (Autodesk Inventor & OpenSCAD)
 
