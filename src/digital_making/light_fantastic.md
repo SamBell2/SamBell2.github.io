@@ -5,7 +5,7 @@ hide:
  - toc
 ---
 # Light Fantastic
-*2023-2025*
+*2023-2025 - Aged 12-14*
 ![An image of the Light Fantastic](images/lightfantastic.png)
 ## Overview
 The Light Fantastic is a project from the book [Raspberry Pi Projects for Dummies](https://www.dummies.com/book/technology/computers/hardware/raspberry-pi/raspberry-pi-projects-for-dummies-281598/){target="_blank" rel="noopener"}. It is a 4x4 RGB illuminated button matrix, so 16 individually addressable RGB lights under 16 buttons. In the book, they run a ribbon cable to a raspberry pi outside the box, but as the Pico has now been released, I am using that inside the box. It is now mostly working, but there are still 2 buttons that don't register presses.
