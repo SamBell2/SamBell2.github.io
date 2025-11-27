@@ -33,4 +33,25 @@ plugins:
 extra_css:
   - css/custom.css
 markdown_extensions:
- - attr_list
+  - attr_list
+nav:
+  - Home: index.md
+  - Gallery: gallery.md
+  - Programming:
+    - Chess Bot: programming/chess_bot.md
+    - QR Code Generator: programming/qr_code_generator.md
+    - Scripted Journeys: programming/scripted_journeys.md
+    - Sudoku Solver: programming/sudoku_solver.md
+    - Morse Code Translator: programming/morse_code.md
+  - Electronics:
+    - CPU: electronics/cpu.md
+    - Safe: electronics/safe.md
+  - Digital Making:
+    - Laptop: digital_making/laptop.md
+    - Light Fantastic: digital_making/light_fantastic.md
+    - Magic Mirror: digital_making/magic_mirror.md
+    - Wildlife Camera: digital_making/wildlife_camera.md
+  - Robotics:
+    - WER 2025: robotics/WER2025.md
+    - Picar S: robotics/picar.md
+    - CamJam Robot: robotics/camjam.md
