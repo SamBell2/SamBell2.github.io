@@ -5,7 +5,7 @@ hide:
  - toc
 ---
 # Laptop
-*2023-2025*
+*2023-2025 - Aged 12-14*
 ![An image of my laptop](images/laptop.png)
 ## Overview
 I made this fully working miniature laptop from scratch. It uses a Raspberry Pi 4, a PiTFT touchscreen display, a miniature keyboard and a 3D printed case. It also has a rechargeable battery, but I haven't added an on/off switch yet so it needs to be plugged in. So far, it only boots to CLI but I am confident I can get it working to desktop.
