@@ -5,7 +5,7 @@ hide:
  - toc
 ---
 # Chess Bot
-*2025*
+*2025 - Aged 14*
 ![An image of my chess bot running](images/chessbot.png)
 *A [Lichess.org](https://lichess.org/h98ou7COBKNf){target="_blank" rel="noopener"} game where my bot won*
 ## Overview
