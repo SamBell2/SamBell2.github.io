@@ -5,6 +5,6 @@ hide:
  - toc
 ---
 # Sudoku Solver
-*2023*
+*2023 - Aged 12*
 ![An image of my sudoku solver](images/sudokusolver.png)
 ## Details coming soon!
