@@ -1,8 +1,10 @@
 ---
 title: Safe
-hide:
- - navigation
- - toc
+summary: A homemade safe
+year: 2021
+tags:
+    - Electronics
+    - Logic
 ---
 # Safe
 *2021 - Aged 10*

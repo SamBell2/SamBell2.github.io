@@ -1,8 +1,13 @@
 ---
 title: Chess Bot
-hide:
- - navigation
- - toc
+summary: My miniature laptop
+year: 2023
+tags:
+    - Programming
+    - Java
+    - AI
+    - Algorithms
+    - Games
 ---
 # Chess Bot
 *2025 - Aged 14*

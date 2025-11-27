@@ -1,8 +1,13 @@
 ---
 title: Laptop
-hide:
- - navigation
- - toc
+summary: My miniature laptop
+year: 2023
+tags:
+    - Digital Making
+    - 3D Printed
+    - Soldering
+    - Electronics
+    - Raspberry Pi
 ---
 # Laptop
 *2023-2025 - Aged 12-14*

@@ -1,8 +1,12 @@
 ---
 title: Sudoku Solver
-hide:
- - navigation
- - toc
+summary: An app to solve sudoku puzzles
+year: 2023
+tags:
+    - Programming
+    - Python
+    - Graphical Interfaces
+    - Algorithms
 ---
 # Sudoku Solver
 *2023 - Aged 12*

@@ -1,7 +1,8 @@
 ---
 title: Gallery
-hide:
- - toc
+summary: A gallery of my favourite projects
+year: 2025
+tags: []
 ---
 # My Projects
 

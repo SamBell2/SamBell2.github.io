@@ -1,8 +1,16 @@
 ---
 title: Light Fantastic
-hide:
- - navigation
- - toc
+summary: An illuminated button matrix
+year: 2023
+tags:
+    - Digital Making
+    - 3D Printed
+    - Soldering
+    - Programming
+    - Python
+    - Electronics
+    - Raspberry Pi
+    - Games
 ---
 # Light Fantastic
 *2023-2025 - Aged 12-14*

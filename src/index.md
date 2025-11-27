@@ -1,7 +1,8 @@
 ---
-title: Welcome
-hide:
- - toc
+title: Home
+summary: The homepage of my portfolio
+year: 2025
+tags: []
 ---
 
 # **Sam Bell's Portfolio of Projects**

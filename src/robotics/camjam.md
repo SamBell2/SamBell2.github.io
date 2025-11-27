@@ -1,8 +1,14 @@
 ---
 title: Camjam Robot
-hide:
- - navigation
- - toc
+summary: My CamJam EduKit 3 Robot
+year: 2022
+tags:
+    - Digital Making
+    - Robotics
+    - Electronics
+    - Programming
+    - Python
+    - Sensors
 ---
 # My First Robot
 *2022 - Aged 11*

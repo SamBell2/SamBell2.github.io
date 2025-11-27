@@ -1,8 +1,12 @@
 ---
 title: QR Code generator
-hide:
- - navigation
- - toc
+summary: A QR Code Generator
+year: 2024
+tags:
+    - Programming
+    - Python
+    - Algorithms
+    - File Handling
 ---
 # QR Code Generator
 *2024 - Aged 13*

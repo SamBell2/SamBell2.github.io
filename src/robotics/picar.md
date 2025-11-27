@@ -1,8 +1,14 @@
 ---
 title: Picar S
-hide:
- - navigation
- - toc
+summary: My SunFounder Picar S Robot
+year: 2023
+tags:
+    - Robotics
+    - Electronics
+    - Programming
+    - Python
+    - Raspberry Pi
+    - Digital Making
 ---
 # Picar S
 *2023-2025 - Aged 12-14*

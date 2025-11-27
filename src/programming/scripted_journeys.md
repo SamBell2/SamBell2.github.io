@@ -1,8 +1,13 @@
 ---
 title: Scripted Journeys
-hide:
- - navigation
- - toc
+summary: A multi-map text-based adventure game
+year: 2024
+tags:
+    - Programming
+    - Python
+    - File Handling
+    - App Publishing
+    - Games
 ---
 # Scripted Journeys
 *2024-2025 - Aged 13-14*

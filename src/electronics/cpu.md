@@ -1,8 +1,12 @@
 ---
 title: CPU
-hide:
- - navigation
- - toc
+summary: An 8-bit CPU
+year: 2025
+tags:
+    - Electronics
+    - Digital Making
+    - Soldering
+    - Logic
 ---
 # CPU
 *2025 - Aged 14*
