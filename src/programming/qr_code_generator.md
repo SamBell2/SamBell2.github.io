@@ -5,7 +5,7 @@ hide:
  - toc
 ---
 # QR Code Generator
-*2024*
+*2024 - Aged 13*
 ![An image of my QR code generator running](images/qrcode.png)
 *Part of the code and the ouput of the QR code generator*
 ## Overview
