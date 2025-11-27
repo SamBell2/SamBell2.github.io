@@ -7,3 +7,4 @@ hide:
 # Picar S
 *2023-2025*
 ![An image of my Picar S](images/picar.png)
+## Details coming soon!
