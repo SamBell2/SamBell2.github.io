@@ -5,6 +5,6 @@ hide:
  - toc
 ---
 # My First Robot
-*2022*
+*2022 - Aged 11*
 ![An image of my first robot](images/camjam.png)
 ## Details coming soon!
