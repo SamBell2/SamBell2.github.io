@@ -9,7 +9,7 @@ hide:
 ![An image of my QR code generator running](images/qrcode.png)
 *Part of the code and the ouput of the QR code generator*
 ## Overview
-I got the inspiration for this project because QR codes are everywhere but very few people actually think about how they work. I then found an amazing [guide](https://www.thonky.com/qr-code-tutorial/){target="_blank" rel="noopener"} that showed every step. QR codes are far more complicated than you would think, mostly due to the error-correction. You can imagine that if you scan a QR code in not ideal conditions, then the camera may misread one or two pixels. This means we need error correction, which is really complex!
+I got the inspiration for this project because QR codes are everywhere but very few people actually think about how they work. I then found an amazing [guide](https://www.thonky.com/qr-code-tutorial/){target="_blank" rel="noopener"} that showed every step. QR codes are far more complicated than you would think, mostly due to the error-correction. You can imagine that if you scan a QR code in not ideal conditions, then the camera may misread one or two pixels. This means we need error correction, which is really complex! The code is on [my Github](https://github.com/SamBell2/QR_generator){target="_blank" rel="noopener"}.
 ## What It Does
 It takes a line of text as input from the user, then generates the QR code, saves it as a temporary file and opens it in your default image viewer. From there you can save it somewhere else or share it.
 ## Technical Summary

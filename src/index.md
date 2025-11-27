@@ -4,14 +4,14 @@ hide:
  - toc
 ---
 
-# **Sam Bell**
+# **Sam Bell's Portfolio of Projects**
 
 ![An image of me](images/me.png)
 
 ---
 
 ## About Me
-I am a 14 year old electronics and programming enthusiast. I love computer science and everything related to digital making, and have since I learnt the basics of Python when I was 8. Since then, it has become my main hobby and the direction I want my career to go in. In 2020, I got my first Raspberry Pi and learnt about electronics. Recently I realised that digital making and robotics combine both of my main interests, and those are what I'm focussing on now.
+I am a 14 year old electronics and programming enthusiast. I love computer science and everything related to digital making, and have since I learnt the basics of Python when I was 8. Since then, it has become my main hobby and the direction I want my career to go in. In 2020, I got my first Raspberry Pi and learnt about electronics. Recently I realised that digital making and robotics combine both of my main interests, and those are what I'm focusing on now. I have made loads (82 that I still have records of!) of projects of varying degrees of difficulty. This portfolio contains the ones that I am most proud of.
 
 ---
 
@@ -29,20 +29,21 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 ## My Skills
 
 ### **Technical Skills**
-- **Programming**: I know how to program in many languages (e.g. C, PHP, and Go, to name a few), but my strongest are Python, Java and HTML/CSS.
-- **Electronics**: Soldering, PCB Design (KiCad)
+- **Programming**: I know how to program in many languages (e.g. C, HTML/CSS, and Go, to name a few), but my strongest are Python and Java.
+- **Electronics**: Soldering, PCB Design (KiCad), and simply being able to work out how stuff should work.
 - **Tools**: Git, Raspberry Pi, CAD (Autodesk Inventor & OpenSCAD)
+- **Systems**: I understand how systems like Linux work due to me constantly changing, fixing and improving it on my own computer.
 
 ### **Soft Skills**
-- Problem Solving - I have come across many challenges across these projects and have solved almost all of them.
-- Curiosity - I have always wanted to know how things work, and I usually find this out by making it (e.g. [QR code generator](programming/qr_code_generator.md))
-- Resilience - I just refuse to give up, even if a problem takes me years to solve, such as the [Light Fantastic](digital_making/light_fantastic.md)
+- **Problem Solving** - I have come across many challenges over my 5 years of making, and seeing as my family and friends aren't interested in coding or making, I have to solve everything myself using the internet, magazines and books. This has made me pretty good at problem solving.
+- **Curiosity** - I have always wanted to know how things work, and I usually find this out by making it (e.g. my [QR code generator](programming/qr_code_generator.md))
+- **Resilience** - I just refuse to give up, even if a problem takes me years to solve! I started many of my projects (such as the [Light Fantastic](digital_making/light_fantastic.md)) when I was younger and didn't have enough knowledge, skills or experience, but I kept coming back to them until I managed to finish them.
 
 ---
 
 ## Recent Achievements
 - **British champion** in an international robotics competition
-- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"}
+- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"} (I missed this year's deadline)
 - Predicted **Grade 9** in GCSE Computer Science
 
 ---

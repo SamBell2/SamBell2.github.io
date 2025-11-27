@@ -44,6 +44,8 @@ nav:
     - Sudoku Solver: programming/sudoku_solver.md
     - Morse Code Translator: programming/morse_code.md
   - Electronics:
+#    - CPU:
+#      - CPU: electronics/cpu.md
     - CPU: electronics/cpu.md
     - Safe: electronics/safe.md
   - Digital Making:
