@@ -18,7 +18,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Gallery: gallery.md
-  - Categories: tags.md
+#  - Categories: tags.md
   - Programming:
     - Chess Bot: programming/chess_bot.md
     - QR Code Generator: programming/qr_code_generator.md
