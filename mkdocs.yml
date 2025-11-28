@@ -9,7 +9,7 @@ theme:
   disable_nav_previous_next: true
   disable_footer: true
 plugins:
-  - with-pdf
+#  - with-pdf
   - tags
 extra_css:
   - extra/custom.css
@@ -18,7 +18,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Gallery: gallery.md
-  - Tags: tags.md
+  - Categories: tags.md
   - Programming:
     - Chess Bot: programming/chess_bot.md
     - QR Code Generator: programming/qr_code_generator.md
