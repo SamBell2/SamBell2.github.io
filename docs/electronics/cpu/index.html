@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>CPU - Sam's Portfolio</title>
+    <title>Overview - Sam's Portfolio</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -126,9 +126,30 @@
                         <ul class="dropdown-menu">
                         
                             
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CPU</a>
+    <ul class="dropdown-menu">
+        
+            
 <li class="active">
-    <a href="./">CPU</a>
+    <a href="./">Overview</a>
 </li>
+
+        
+            
+<li >
+    <a href="../cpu_clock/">Clock Module</a>
+</li>
+
+        
+            
+<li >
+    <a href="../cpu_alu/">ALU</a>
+</li>
+
+        
+    </ul>
+  </li>
 
                         
                             
@@ -204,6 +225,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
             </ul>
         </div>
     </div>
@@ -225,13 +251,12 @@
                 
             <li class="second-level"><a href="#what-im-learning">What I'm Learning</a></li>
                 
-            <li class="second-level"><a href="#challenges">Challenges</a></li>
+            <li class="second-level"><a href="#more-details">More Details</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><a class="button" href="/tags.html#Electronics">Electronics</a> <a class="button" href="/tags.html#Digital Making">Digital Making</a> <a class="button" href="/tags.html#Soldering">Soldering</a> <a class="button" href="/tags.html#Logic">Logic</a> </p>
 <h1 id="cpu">CPU</h1>
 <p><em>2025 - Aged 14</em>
 <img alt="An image of my CPU" src="../images/cpu.png" />
@@ -251,12 +276,15 @@
 <p>I want to make an 8-bit CPU with 16 instructions. It will be fully Turing-complete. It will be able to do maths, store data, jump and branch to other parts of a program, and input and output to other devices. The instruction set I want to implement are adding, subtracting, NORing, right shifting, loading from RAM, storing to RAM, loading from a port, storing to a port, loading immediate values, adding immediate values, jumping around the program, branching to other parts of a program depending on a condition, and halting.</p>
 <h2 id="how-im-building-it">How I'm Building It</h2>
 <p>I am making it module by module, first breadboarding it to test it and make sure it works, then soldering it down to a <a href="https://www.amazon.co.uk/Prototype-Solderable-Breadboard-Electronics-Gold-Plated-2-Matte-Black/dp/B082KY5Y5Z?th=1" rel="noopener" target="_blank">solderable breadboard</a>. So far, I have fully tested the clock module and have mostly soldered it down. I have also tested most of the ALU but had to stop because I ran out of wires! I am soldering the components to the top of the board so you can see them easily and the wires to the bottom of the board, just because I think it looks neater.
-<img alt="An image of the back of my CPU" src="../images/cpu_back.png" />
-<em>The back of my CPU with all the wires</em></p>
+<img alt="An image of the back of my CPU clock" src="../images/cpu_back.png" />
+<em>The back of my CPU clock with all the wires</em></p>
 <h2 id="what-im-learning">What I'm Learning</h2>
 <p>I am learning LOADS about the internal mechanisms of how computers actually work at the most detailed level, as well as soldering skills, PCB design, and electronic principles such as why pull-up/down resistors are actually necessary.</p>
-<h2 id="challenges">Challenges</h2>
-<p>When testing the clock module, the circuit that should have made the bistable 555 timer didn't work, so I had to experiment with a lot of different methods. I eventually got it working by tying a 0.1µF capacitor across pin 5 and ground, but weirdly when I soldered it down, it worked without the capacitor. I still added it in just in case.</p></div>
+<h2 id="more-details">More Details</h2>
+<ul>
+<li><a href="../cpu_clock/">Clock Module</a></li>
+<li><a href="../cpu_alu/">ALU</a></li>
+</ul></div>
         
         
     </div>
@@ -274,8 +302,35 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

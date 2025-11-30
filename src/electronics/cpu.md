@@ -25,9 +25,10 @@ This is my current project, it is an 8-bit CPU built out of individual ICs (Inte
 I want to make an 8-bit CPU with 16 instructions. It will be fully Turing-complete. It will be able to do maths, store data, jump and branch to other parts of a program, and input and output to other devices. The instruction set I want to implement are adding, subtracting, NORing, right shifting, loading from RAM, storing to RAM, loading from a port, storing to a port, loading immediate values, adding immediate values, jumping around the program, branching to other parts of a program depending on a condition, and halting.
 ## How I'm Building It
 I am making it module by module, first breadboarding it to test it and make sure it works, then soldering it down to a [solderable breadboard](https://www.amazon.co.uk/Prototype-Solderable-Breadboard-Electronics-Gold-Plated-2-Matte-Black/dp/B082KY5Y5Z?th=1){target="_blank" rel="noopener"}. So far, I have fully tested the clock module and have mostly soldered it down. I have also tested most of the ALU but had to stop because I ran out of wires! I am soldering the components to the top of the board so you can see them easily and the wires to the bottom of the board, just because I think it looks neater.
-![An image of the back of my CPU](images/cpu_back.png)
-*The back of my CPU with all the wires*
+![An image of the back of my CPU clock](images/cpu_back.png)
+*The back of my CPU clock with all the wires*
 ## What I'm Learning
 I am learning LOADS about the internal mechanisms of how computers actually work at the most detailed level, as well as soldering skills, PCB design, and electronic principles such as why pull-up/down resistors are actually necessary.
-## Challenges
-When testing the clock module, the circuit that should have made the bistable 555 timer didn't work, so I had to experiment with a lot of different methods. I eventually got it working by tying a 0.1µF capacitor across pin 5 and ground, but weirdly when I soldered it down, it worked without the capacitor. I still added it in just in case.
+## More Details
+* [Clock Module](cpu_clock.md)
+* [ALU](cpu_alu.md)

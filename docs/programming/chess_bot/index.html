@@ -126,9 +126,30 @@
                         <ul class="dropdown-menu">
                         
                             
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">CPU</a>
+    <ul class="dropdown-menu">
+        
+            
 <li >
-    <a href="../../electronics/cpu/">CPU</a>
+    <a href="../../electronics/cpu/">Overview</a>
 </li>
+
+        
+            
+<li >
+    <a href="../../electronics/cpu_clock/">Clock Module</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../electronics/cpu_alu/">ALU</a>
+</li>
+
+        
+    </ul>
+  </li>
 
                         
                             
@@ -204,6 +225,11 @@
                 </ul>
 
             <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
             </ul>
         </div>
     </div>
@@ -231,7 +257,6 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><a class="button" href="/tags.html#Programming">Programming</a> <a class="button" href="/tags.html#Java">Java</a> <a class="button" href="/tags.html#AI">AI</a> <a class="button" href="/tags.html#Algorithms">Algorithms</a> <a class="button" href="/tags.html#Games">Games</a> </p>
 <h1 id="chess-bot">Chess Bot</h1>
 <p><em>2025 - Aged 14</em>
 <img alt="An image of my chess bot running" src="../images/chessbot.png" />
@@ -274,8 +299,35 @@
     <script>var base_url = "../.."</script>
     
     <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
 
-    <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

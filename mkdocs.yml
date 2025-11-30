@@ -10,7 +10,7 @@ theme:
   disable_footer: true
 plugins:
 #  - with-pdf
-  - tags
+#  - tags
 extra_css:
   - extra/custom.css
 markdown_extensions:
@@ -26,9 +26,11 @@ nav:
     - Sudoku Solver: programming/sudoku_solver.md
     - Morse Code Translator: programming/morse_code.md
   - Electronics:
-#    - CPU:
-#      - CPU: electronics/cpu.md
-    - CPU: electronics/cpu.md
+    - CPU:
+      - Overview: electronics/cpu.md
+      - Clock Module: electronics/cpu_clock.md
+      - ALU: electronics/cpu_alu.md
+#    - CPU: electronics/cpu.md
     - Safe: electronics/safe.md
   - Digital Making:
     - Laptop: digital_making/laptop.md

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My portfolio to display all of my programming and electronics projects.">
     <meta name="author" content="Sam Bell">
-    <link rel="canonical" href="https://sambell2.github.io/digital_making/laptop/">
+    <link rel="canonical" href="https://sambell2.github.io/electronics/cpu_alu/">
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Laptop - Sam's Portfolio</title>
+    <title>ALU - Sam's Portfolio</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -121,7 +121,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -132,19 +132,19 @@
         
             
 <li >
-    <a href="../../electronics/cpu/">Overview</a>
+    <a href="../cpu/">Overview</a>
 </li>
 
         
             
 <li >
-    <a href="../../electronics/cpu_clock/">Clock Module</a>
+    <a href="../cpu_clock/">Clock Module</a>
 </li>
 
         
             
-<li >
-    <a href="../../electronics/cpu_alu/">ALU</a>
+<li class="active">
+    <a href="./">ALU</a>
 </li>
 
         
@@ -154,7 +154,7 @@
                         
                             
 <li >
-    <a href="../../electronics/safe/">Safe</a>
+    <a href="../safe/">Safe</a>
 </li>
 
                         
@@ -163,31 +163,31 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digital Making <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Laptop</a>
+<li >
+    <a href="../../digital_making/laptop/">Laptop</a>
 </li>
 
                         
                             
 <li >
-    <a href="../light_fantastic/">Light Fantastic</a>
+    <a href="../../digital_making/light_fantastic/">Light Fantastic</a>
 </li>
 
                         
                             
 <li >
-    <a href="../magic_mirror/">Magic Mirror</a>
+    <a href="../../digital_making/magic_mirror/">Magic Mirror</a>
 </li>
 
                         
                             
 <li >
-    <a href="../wildlife_camera/">Wildlife Camera</a>
+    <a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
 </li>
 
                         
@@ -240,14 +240,18 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#laptop">Laptop</a></li>
+        <li class="first-level active"><a href="#alu">ALU</a></li>
             <li class="second-level"><a href="#overview">Overview</a></li>
                 
-            <li class="second-level"><a href="#electronics">Electronics</a></li>
+            <li class="second-level"><a href="#the-leds">The LEDs</a></li>
                 
-            <li class="second-level"><a href="#software">Software</a></li>
+            <li class="second-level"><a href="#adding-and-subtracting">Adding and Subtracting</a></li>
                 
-            <li class="second-level"><a href="#case">Case</a></li>
+            <li class="second-level"><a href="#nor-operation">NOR Operation</a></li>
+                
+            <li class="second-level"><a href="#right-shift">Right Shift</a></li>
+                
+            <li class="second-level"><a href="#mode-selection">Mode Selection</a></li>
                 
             <li class="second-level"><a href="#challenges">Challenges</a></li>
                 
@@ -255,19 +259,24 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="laptop">Laptop</h1>
-<p><em>2023-2025 - Aged 12-14</em>
-<img alt="An image of my laptop" src="../images/laptop.png" /></p>
+<h1 id="alu">ALU</h1>
+<p><em>2025 - Aged 14</em>
+<img alt="An image of my ALU" src="images/cpu_alu.png" />
+<em>An image of my ALU</em></p>
 <h2 id="overview">Overview</h2>
-<p>I made this fully working miniature laptop from scratch. It uses a Raspberry Pi 4, a PiTFT touchscreen display, a miniature keyboard and a 3D printed case. It also has a rechargeable battery, but I haven't added an on/off switch yet so it needs to be plugged in. So far, it only boots to CLI but I am confident I can get it working to desktop.</p>
-<h2 id="electronics">Electronics</h2>
-<p>The battery is wrapped in duct tape to stop any possible shorts, then put in between the Pi and the screen. The screen is mounted directly on the Pi's GPIO pins, and has a small breakout of some of the pins. However, I had to bend these so the battery fit in. I am using a PowerBoost 1000C to connect the battery to the computer. The battery's power and ground lines are soldered onto the powerboost. Another pair of wires goes from the powerboost to some of the pins on the PiTFT to power it and the Pi. I also have a small speaker soldered to an amp, but don't yet have the amp's power or data lines connected and I need to add the power switch so I can turn it on and off. The keyboard is just a <a href="https://thepihut.com/products/miniature-wireless-usb-keyboard-with-touchpad-1" rel="noopener" target="_blank">Rii mini wireless keyboard</a>. All I had to do was plug the dongle into the Pi and it worked.</p>
-<h2 id="software">Software</h2>
-<p>The Raspberry Pi has the standard Raspberry Pi OS installed. I have tried to install the display drivers and they half work. It does display to the screen and is the right way up, but it only shows the console. When I use framebuffer tools such as <code>fbi</code> and <code>pygame</code>, it displays to the screen, so I can make keyboard-based Pygame games. However, as there is no X server running the mouse doesn't work. When I have another display hooked up to the HDMI ports, then it and the PiTFT have the exact same output until I run <code>startx</code>, then the PiTFT freezes, and only the HDMI display works until I end the X session.</p>
-<h2 id="case">Case</h2>
-<p>The case is 3D printed, and I found all the parts online <a href="https://www.thingiverse.com/thing:864547" rel="noopener" target="_blank">here</a>. I didn't have to do any CAD. However, because of the resolution of my printer, the screw threads didn't print properly, so I am holding the back on with tape. Also, the Pi can't be screwed into the holes so I have to design and print something to keep it from falling out.</p>
+<p>Doing maths is one of the main purposes of a CPU, and the ALU (Arithmetic and Logic Unit) is the bit that actually does it. As with the rest of my CPU, this is less powerful than most modern ones. It has 4 modes, add, subtract, NOR, and right shift (divide by two, ignore any remainder). I am making it on 2 breadboards: the top one to show the inputs, output, and setting, as well as switching between modes, and the bottom one to actually do the maths. The top breadboard has 26 LEDs on it, and will have 2 8-bit 2:1 multiplexers. The bottom one has 2 quad-XOR gates, 2 4-bit adders and 2 quad-NOR gates. The right shift is simply connecting the inputs to the output in a different place.</p>
+<h2 id="the-leds">The LEDs</h2>
+<p>This was a simple part. All I had to do was solder down a whole load of green and blue LEDs, some resistors and some wires. Despite this, I still came across a few issues when prototyping. The current-limiting resistors I used were 470R resistors, which pulled too much current and so the chips to actually use the data sometimes didn't have enough current to know if it was a 1 or a 0. This meant the built-in pull-up resistors took over and the actual data was ignored. I fixed this by using 10kR resistors instead.</p>
+<h2 id="adding-and-subtracting">Adding and Subtracting</h2>
+<p>I used 4 chips for this, 2 adders and 2 XOR chips. Adding 2 numbers is simple: just feed them into the adders (I do know how the adders actually work, but making my own would be too expensive). Subtracting is harder, as you have to negate the second number and then add them together. This is essentially just doing 5 + -3 instead of 5 - 3. In binary, negative numbers are expressed in two's complement, which you convert into by inverting all of the bits and adding 1. I accomplished this by using a single subtract signal (this is actually the least significant bit of the setting as the setting for add is 00, so it won't subtract, subtract is 01 so it will subtract, and the other two don't matter as they won't use the adders anyway). The subtract signal is XORed with all of the data bits for the second number, as any number XOR 0 is itself, and any number XOR 1 is itself inverted. The subtract signal then also goes to the carry in of the first adder, so it will add one. This setup means that the second number will always go through the XOR gates, simplifying the wiring even if it does make the logic more complex.</p>
+<h2 id="nor-operation">NOR Operation</h2>
+<p>This was a simple bit, as I just connected the inputs of the ALU to the inputs of the NOR gates. I came across no problems, and it was straightforward.</p>
+<h2 id="right-shift">Right Shift</h2>
+<p>I haven't done this yet, as it will be very simple. I don't have the multiplexers yet so I have to wait to connect the inputs to one.</p>
+<h2 id="mode-selection">Mode Selection</h2>
+<p>I haven't actually made this yet, but I have the logic all worked out. It needs 2 8-bit 2:1 multiplexers. The first one chooses between the NOR and right shift operation, and the control bit is the least significant bit of the setting. If it is 0 (in NOR or ADD), then the multiplexers will choose the NOR output and the adders will add. If it is 1 (in RSH or SUB), they will choose the right shift output and the adders will subtract. We now have 2 8-bit numbers, one from the NOR/RSH and one from the adders. The most significant bit of the setting decides this one. If it is 0 (in ADD or SUB), the multiplexers will choose the adders. If it is 1 (in NOR or RSH), they will choose the output from the first multiplexers. The output of these multiplexers will go straight to the output LEDs.</p>
 <h2 id="challenges">Challenges</h2>
-<p>There were a number of challenges in making this project, some of which I haven't solved yet. The first one was that I used a PowerBoost 1000 instead of a PowerBoost 1000C, so I had no Micro USB charging port. I didn't even realise this until quite a long way into the project, when I tried to charge the battery and found I couldn't. I had to buy a new one, desolder/cut off wires from the old one and resolder the new one. The next (current) challenge is figuring out how to mirror the HDMI output to <code>/dev/fb1</code> which is the screen's framebuffer.</p></div>
+<p>I didn't come across many challenges (yet) when making this. The main one was the weak resistors pulling all of the current so the chips registered a high input, but this was easily fixed. I still have the multiplexers to add though, so I may come across more problems.</p></div>
         
         
     </div>

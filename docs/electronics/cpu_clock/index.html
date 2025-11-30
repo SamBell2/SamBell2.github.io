@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My portfolio to display all of my programming and electronics projects.">
     <meta name="author" content="Sam Bell">
-    <link rel="canonical" href="https://sambell2.github.io/digital_making/laptop/">
+    <link rel="canonical" href="https://sambell2.github.io/electronics/cpu_clock/">
     <link rel="shortcut icon" href="../../img/favicon.ico">
 
     
-    <title>Laptop - Sam's Portfolio</title>
+    <title>Clock Module - Sam's Portfolio</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -121,7 +121,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -132,19 +132,19 @@
         
             
 <li >
-    <a href="../../electronics/cpu/">Overview</a>
+    <a href="../cpu/">Overview</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Clock Module</a>
 </li>
 
         
             
 <li >
-    <a href="../../electronics/cpu_clock/">Clock Module</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../electronics/cpu_alu/">ALU</a>
+    <a href="../cpu_alu/">ALU</a>
 </li>
 
         
@@ -154,7 +154,7 @@
                         
                             
 <li >
-    <a href="../../electronics/safe/">Safe</a>
+    <a href="../safe/">Safe</a>
 </li>
 
                         
@@ -163,31 +163,31 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digital Making <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li class="active">
-    <a href="./">Laptop</a>
+<li >
+    <a href="../../digital_making/laptop/">Laptop</a>
 </li>
 
                         
                             
 <li >
-    <a href="../light_fantastic/">Light Fantastic</a>
+    <a href="../../digital_making/light_fantastic/">Light Fantastic</a>
 </li>
 
                         
                             
 <li >
-    <a href="../magic_mirror/">Magic Mirror</a>
+    <a href="../../digital_making/magic_mirror/">Magic Mirror</a>
 </li>
 
                         
                             
 <li >
-    <a href="../wildlife_camera/">Wildlife Camera</a>
+    <a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
 </li>
 
                         
@@ -240,14 +240,16 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#laptop">Laptop</a></li>
+        <li class="first-level active"><a href="#cpu-clock">CPU Clock</a></li>
             <li class="second-level"><a href="#overview">Overview</a></li>
                 
-            <li class="second-level"><a href="#electronics">Electronics</a></li>
+            <li class="second-level"><a href="#the-automatic-clock">The Automatic Clock</a></li>
                 
-            <li class="second-level"><a href="#software">Software</a></li>
+            <li class="second-level"><a href="#the-manual-clock">The Manual Clock</a></li>
                 
-            <li class="second-level"><a href="#case">Case</a></li>
+            <li class="second-level"><a href="#the-mode-selector">The Mode Selector</a></li>
+                
+            <li class="second-level"><a href="#the-clock-logic">The Clock Logic</a></li>
                 
             <li class="second-level"><a href="#challenges">Challenges</a></li>
                 
@@ -255,19 +257,22 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="laptop">Laptop</h1>
-<p><em>2023-2025 - Aged 12-14</em>
-<img alt="An image of my laptop" src="../images/laptop.png" /></p>
+<h1 id="cpu-clock">CPU Clock</h1>
+<p><em>2025 - Aged 14</em>
+<img alt="An image of my CPU clock" src="../images/cpu_clock.png" />
+<em>An image of my CPU clock</em></p>
 <h2 id="overview">Overview</h2>
-<p>I made this fully working miniature laptop from scratch. It uses a Raspberry Pi 4, a PiTFT touchscreen display, a miniature keyboard and a 3D printed case. It also has a rechargeable battery, but I haven't added an on/off switch yet so it needs to be plugged in. So far, it only boots to CLI but I am confident I can get it working to desktop.</p>
-<h2 id="electronics">Electronics</h2>
-<p>The battery is wrapped in duct tape to stop any possible shorts, then put in between the Pi and the screen. The screen is mounted directly on the Pi's GPIO pins, and has a small breakout of some of the pins. However, I had to bend these so the battery fit in. I am using a PowerBoost 1000C to connect the battery to the computer. The battery's power and ground lines are soldered onto the powerboost. Another pair of wires goes from the powerboost to some of the pins on the PiTFT to power it and the Pi. I also have a small speaker soldered to an amp, but don't yet have the amp's power or data lines connected and I need to add the power switch so I can turn it on and off. The keyboard is just a <a href="https://thepihut.com/products/miniature-wireless-usb-keyboard-with-touchpad-1" rel="noopener" target="_blank">Rii mini wireless keyboard</a>. All I had to do was plug the dongle into the Pi and it worked.</p>
-<h2 id="software">Software</h2>
-<p>The Raspberry Pi has the standard Raspberry Pi OS installed. I have tried to install the display drivers and they half work. It does display to the screen and is the right way up, but it only shows the console. When I use framebuffer tools such as <code>fbi</code> and <code>pygame</code>, it displays to the screen, so I can make keyboard-based Pygame games. However, as there is no X server running the mouse doesn't work. When I have another display hooked up to the HDMI ports, then it and the PiTFT have the exact same output until I run <code>startx</code>, then the PiTFT freezes, and only the HDMI display works until I end the X session.</p>
-<h2 id="case">Case</h2>
-<p>The case is 3D printed, and I found all the parts online <a href="https://www.thingiverse.com/thing:864547" rel="noopener" target="_blank">here</a>. I didn't have to do any CAD. However, because of the resolution of my printer, the screw threads didn't print properly, so I am holding the back on with tape. Also, the Pi can't be screwed into the holes so I have to design and print something to keep it from falling out.</p>
+<p>In a CPU, it needs something to tell it when to do things. This is the clock. Most computers run at a speed of around 3<em>GHz</em> (3 <em>billion</em> cycles per second). Mine will run at up to 48Hz. The clock is made of 4 parts: the automatic clock, the manual clock, the mode selector and the clock logic. The automatic clock just turns on and off again at a variable speed, set by a potentiometer (a dial). The manual clock pulses whenever you push a button, mainly for debugging and testing. The mode selector lets you pick which mode to use and the clock logic actually does the switching.</p>
+<h2 id="the-automatic-clock">The Automatic Clock</h2>
+<p>This was the simplest bit, as it was just a 555 timer in astable mode. I used a potentiometer between pins 6 &amp; 7 so I could change the speed. The rest of the connections were quite straightforward.</p>
+<h2 id="the-manual-clock">The Manual Clock</h2>
+<p>This was far more difficult than I had anticipated, as buttons often bounce, triggering multiple pulses when you only wanted one. I had to use a 555 timer in monostable mode, so when you push the button, it turns on and 0.3 seconds after you release the button, it turns off. This means that if the button does bounce, the extra pulses will be caught in the 0.3 seconds before it turns off.</p>
+<h2 id="the-mode-selector">The Mode Selector</h2>
+<p>Both this and the clock logic could be replaced by a simple 3-pin switch, but again you get the problem of button bounce. Instead, I had to use a 555 timer in bistable mode, where you can push a button once and turn it on, and push the button again and turn it off. This was the hardest part, and I took a while to get it working. After a while, I found that you should add a 100nF capacitor between pin 5 &amp; ground, so I did and it worked.</p>
+<h2 id="the-clock-logic">The Clock Logic</h2>
+<p>Now that I have 3 signals (automatic clock, manual clock and mode), I had to make a circuit to switch between auto and manual modes. This wasn't too hard. First, I had to invert the mode so I had a mode signal and a not mode signal. I then ANDed the auto clock signal with the not mode signal, and the manual clock with the mode signal. I then ORed the two outputs together with a homemade diode OR gate. This was my first problem, as it either gave a high output or a floating output, which was registered as high by the next gate. I fixed it by adding some pull-down resistors. Finally, the output of that gets ANDed with the inverted halt signal to get the output.</p>
 <h2 id="challenges">Challenges</h2>
-<p>There were a number of challenges in making this project, some of which I haven't solved yet. The first one was that I used a PowerBoost 1000 instead of a PowerBoost 1000C, so I had no Micro USB charging port. I didn't even realise this until quite a long way into the project, when I tried to charge the battery and found I couldn't. I had to buy a new one, desolder/cut off wires from the old one and resolder the new one. The next (current) challenge is figuring out how to mirror the HDMI output to <code>/dev/fb1</code> which is the screen's framebuffer.</p></div>
+<p>When testing the clock module, the circuit that should have made the bistable 555 timer didn't work, so I had to experiment with a lot of different methods. I eventually got it working by tying a 0.1µF capacitor across pin 5 and ground, but weirdly when I soldered it down, it worked without the capacitor. I still added it in just in case. In addition, I had a problem with floating outputs of the diode OR gate, but I fixed it with a pull-down resistor. However, sometimes now when it is on the automatic clock, it just stays off. I think I just need to reduce the strength of the resistors, but I haven't done this yet.</p></div>
         
         
     </div>
