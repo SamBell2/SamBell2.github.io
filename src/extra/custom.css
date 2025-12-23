@@ -27,3 +27,15 @@
 /*.bs-sidebar {
   display: none;
 }*/
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::before {
+  content: "▶ ";
+}
+
+details[open] summary::before {
+  content: "▼ ";
+}
