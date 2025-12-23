@@ -33,7 +33,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 - **Programming**: I know how to program in many languages (e.g. C, HTML/CSS, and Go, to name a few), but my strongest are Python and Java.
 - **Electronics**: Soldering, PCB Design (KiCad), and simply being able to work out how stuff should work.
 - **Tools**: Git, Raspberry Pi, CAD (Autodesk Inventor & OpenSCAD)
-- **Systems**: I understand how systems like Linux work due to me constantly changing, fixing and improving it on my own computer.
+- **Systems**: I understand how systems like Linux work due to me constantly changing, fixing and improving them on my own computer.
 
 ### **Soft Skills**
 - **Problem Solving** - I have come across many challenges over my 5 years of making, and seeing as my family and friends aren't interested in coding or making, I have to solve everything myself using the internet, magazines and books. This has made me pretty good at problem solving.
@@ -43,15 +43,15 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 ---
 
 ## Recent Achievements
-- **British champion** in an international robotics competition
+- **British champion** in an international robotics competition ([WER 2025](robotics/WER2025.md))
 - **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"} (I missed this year's deadline)
 - Predicted **Grade 9** in GCSE Computer Science
 
 ---
 
 ## Get in Touch
-- **Email:** samgbell2011@icloud.com
-- **Phone:** 07468779147
+- **Email:** [samgbell2011@icloud.com](mailto:samgbell2011@icloud.com)
+- **Phone:** 07468 779147
 - **Portfolio:** <https://sambell2.github.io>
 
 ### [View My Full Portfolio ➜](gallery.md)
