@@ -241,8 +241,18 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#scripted-journeys">Scripted Journeys</a></li>
-            <li class="second-level"><a href="#details-coming-soon">Details coming soon!</a></li>
+            <li class="second-level"><a href="#overview">Overview</a></li>
                 
+            <li class="second-level"><a href="#how-it-works">How It Works</a></li>
+                
+            <li class="second-level"><a href="#main-screen">Main Screen</a></li>
+                
+            <li class="second-level"><a href="#game-loop">Game Loop</a></li>
+                
+            <li class="second-level"><a href="#publishing">Publishing</a></li>
+                
+                <li class="third-level"><a href="#flathub">Flathub</a></li>
+                <li class="third-level"><a href="#windows">Windows</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -250,7 +260,40 @@
 <h1 id="scripted-journeys">Scripted Journeys</h1>
 <p><em>2024-2025 - Aged 13-14</em>
 <img alt="A screenshot of Scripted Journeys" src="../images/scriptedjourneys.png" /></p>
-<h2 id="details-coming-soon">Details coming soon!</h2></div>
+<h2 id="overview">Overview</h2>
+<p>Scripted Journeys is a text-based adventure game. I originally got the idea from a programming article which made a similar one, which I then improved on. I added multiple maps, which are defined as a set of XML files so users could add new ones if they want. I also added user settings and a few new features. Finally, the hardest part about the whole project was packaging and publishing it so people can actually play it.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>The first thing it does when you open the game is it checks if you have already played it. If this is the first time you play it, it will give you an introduction and the option to change some settings. It then opens the main screen. Once you have chosen a map from the main screen, it launches the actual game.</p>
+<h2 id="main-screen">Main Screen</h2>
+<p>This is a simple loop, getting input then using a large if-elif-else block to process it. it supports a few different functions:  </p>
+<ul>
+<li><strong>Listing available maps</strong>: It just uses <code>os.listdir()</code> with the map folder and filters the output.</li>
+<li><strong>Changing settings</strong>: It gets user settings from a JSON file, then lets the user select which setting to change and what to change it to, before writing it back to the file.</li>
+<li><strong>Loading a saved game</strong>: It has a single save file, which it loads and decodes using <code>pickle</code>. It is a Python list of the Map object then the Player object. Each of these contain references to the other required objects. Once these are decoded, it starts playing using this current state.</li>
+<li><strong>Quitting</strong>: It simply raises a <code>SystemExit()</code> to close the game. It is terminal-based and all files are closed as soon as they have been written to or read from, so it doesn't need to worry about closing anything special.</li>
+<li><strong>Launching the game</strong>: The main screen doesn't need to do anything apart from run a single function. This runs the actual game, and once it is finished the function returns.</li>
+</ul>
+<h2 id="game-loop">Game Loop</h2>
+<p>This is similar to the main screen in that it is just a big loop, but it has a few extra tricks. This is what it does every loop:</p>
+<ol>
+<li>It checks if you are dead.</li>
+<li>It outputs a block of information, including what room you are in, where the exits are, the items in the room and what enemies you can fight.</li>
+<li>It gets your command.</li>
+<li>It parses and runs your command:  <ol>
+<li>It uses a large dictionary that relates the command with the function that runs it and the number of arguments the function takes.</li>
+<li>It using fuzzy matching to find which command you meant to type. This means it doesn't matter if you have a typo. It uses a Levenshtein Distance algorithm to work out how many alterations are needed to convert your command into a possible command, and uses the result.</li>
+<li>It retrieves the correct details about your command from the dictionary.</li>
+<li>It runs the function with the map and the player as arguments, as well as the second word of the command if the function wants it.</li>
+</ol>
+</li>
+<li>If there is a <code>RuntimeError</code> (which I am using as a quit signal) then it breaks out of the loop. I should probably create a seperate exception instead of <code>RuntimeError</code> but so far it hasn't been necessary.</li>
+</ol>
+<h2 id="publishing">Publishing</h2>
+<p>Once I had got the game to a playable state, I decided to publish it online. First, I put it on <a href="https://flathub.org" rel="noopener" target="_blank">Flathub</a> because I use Linux on my computer, and Flathub is one of the main app stores. Once I had done that, I kept developing it for a while, before I decided to make it work on Windows. I still want to make it work on macOS, but in order to publish apps for Apple, you have to have a Mac and I don't.</p>
+<h3 id="flathub">Flathub</h3>
+<p>This was the most challenging part of the project. First, I had to make the app set itself up when you first run it, then I had to make a manifest file. This defined all of the dependencies my app needed, the metadata, where the code was and how to put all the bits of the app in the right places. I then had to test it a lot because I got half of it wrong the first time. Next, I had to submit a pull request to a Github repository which added my manifest and code to a new branch. It got rejected a few times, but I eventually discovered that it was because I had to have the code online, not in the PR. It took me about a week to fix the sources section of the manifest to work with a Github source, but once I did it got accepted quickly. It is now online <a href="https://flathub.org/apps/io.github.MrPiggy92.ScriptedJourneys" rel="noopener" target="_blank">here</a>.</p>
+<h3 id="windows">Windows</h3>
+<p>The hardest part about packaging for Windows was the refactoring of a good portion of it to remove Linux-only sections, which took a good few weeks.I then had to check that I hadn't broken the Flathub elements, then I spent a while fixing those bits I did break. Once all of the code worked on both of them, I had to compile it to an executable, which contained the actual game. However, I still wasn't finished. This ran the game, but it didn't install it, so i still had to work out how to actually package it. This bit was much easier than I thought, as I found a tool called <a href="https:https://jrsoftware.org/isinfo.php" rel="noopener" target="_blank">Inno Setup</a> which did most of the work for me. I still had to configure it so it put all of the files in the right place in the EXE, but it did the hardest bits. You can grab the installer <a href="https://github.com/SamBell2/ScriptedJourneys/raw/refs/heads/master/windows/Output/Scripted%20Journeys.exe">here</a>.</p></div>
         
         
     </div>
