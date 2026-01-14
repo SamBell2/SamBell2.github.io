@@ -132,19 +132,19 @@
         
             
 <li >
-    <a href="../../electronics/cpu/">Overview</a>
+    <a href="../../electronics/cpu/cpu/">Overview</a>
 </li>
 
         
             
 <li >
-    <a href="../../electronics/cpu_clock/">Clock Module</a>
+    <a href="../../electronics/cpu/clock/">Clock Module</a>
 </li>
 
         
             
 <li >
-    <a href="../../electronics/cpu_alu/">ALU</a>
+    <a href="../../electronics/cpu/alu/">ALU</a>
 </li>
 
         
@@ -241,7 +241,17 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#magic-mirror">Magic Mirror</a></li>
-            <li class="second-level"><a href="#details-coming-soon">Details coming soon!</a></li>
+            <li class="second-level"><a href="#overview">Overview</a></li>
+                
+            <li class="second-level"><a href="#electronics">Electronics</a></li>
+                
+            <li class="second-level"><a href="#software">Software</a></li>
+                
+            <li class="second-level"><a href="#case">Case</a></li>
+                
+            <li class="second-level"><a href="#challenges">Challenges</a></li>
+                
+            <li class="second-level"><a href="#what-i-learned">What I Learned</a></li>
                 
     </ul>
 </div></div>
@@ -250,7 +260,39 @@
 <h1 id="magic-mirror">Magic Mirror</h1>
 <p><em>2023-2025 - Aged 12-14</em>
 <img alt="An image of my magic mirror" src="../images/magicmirror.png" /></p>
-<h2 id="details-coming-soon">Details coming soon!</h2></div>
+<h2 id="overview">Overview</h2>
+<p>A magic mirror is a mirror that has text and possibly images displayed on it. They typically work with a 2-way mirror where you can see through it as well as the reflection, and then just placing a screen behind it. I got the inspiration to make one from the <a href="https://magazine.raspberrypi.com/issues/93" rel="noopener" target="_blank">MagPi issue #93</a>, where they finished a guide on creating your own. This project involved learning a new programming language, 3D CAD, API calls and Linux setup.</p>
+<hr />
+<h2 id="electronics">Electronics</h2>
+<p>I chose a Raspberry Pi here because it made it simple to run a display, had a full Linux OS and I already knew how to use them. I got a Raspberry Pi Touch Display which was very much overkill as once the project's completed, you are never going to touch it (it'll be behind a mirror), but I already had one so decided to use it. I then just got a Raspberry Pi 3, connected it to the screen, and moved on to software.</p>
+<hr />
+<h2 id="software">Software</h2>
+<p>First, I got the <a href="https://magicmirror.builders/" rel="noopener" target="_blank">MagicMirror²</a> software installed and set up. By default, it had a few useful modules installed, such as the time and the weather, but I also decided to change most of them. I removed the 'compliment' module, because the screen I used was too small, and then found a few other ones online that I liked. Once I had finished customising the display, the modules I had were:  </p>
+<ul>
+<li><a href="https://docs.magicmirror.builders/modules/clock.html" rel="noopener" target="_blank">Clock</a></li>
+<li><a href="https://docs.magicmirror.builders/modules/weather.html" rel="noopener" target="_blank">Weather</a></li>
+<li><a href="https://docs.magicmirror.builders/modules/newsfeed.html" rel="noopener" target="_blank">News Feed</a></li>
+<li><a href="https://github.com/alanshen111/MMM-Facts" rel="noopener" target="_blank">Facts</a></li>
+<li><a href="https://github.com/cgillinger/MMM-WeatherEffects" rel="noopener" target="_blank">Weather Effects</a></li>
+<li><a href="https://github.com/Jopyth/MMM-Advent" rel="noopener" target="_blank">Advent Calendar</a></li>
+</ul>
+<p>I left it at this stage for a few months, then I decided to go a step further. I learnt how to program in JavaScript, then discovered how to use the MagicMirror² API to create my own modules. The first one I made gave you a random Pokemon each day, similar to <a href="https://github.com/NolanKingdon/MMM-DailyPokemon" rel="noopener" target="_blank">this one</a> but with less information. I made a few more small ones, but I haven't yet made a big one as the case problems put me off this project.</p>
+<hr />
+<h2 id="case">Case</h2>
+<p>Surprisingly, this was the bit that took the longest. I measured the precise dimensions of the glass and the screen, and designed a case that would fit it perfectly. I then 3D printed it, which took almost 24 hours to complete, but when I tested it, it didn't fit! I had designed it to fit the mirror so neatly that the printer squishing the plastic as it moved made it too narrow! This put me off 3D printing far more than it should, and I just put the mirror in a shoebox and forgot about it for a year. Recently (late 2025), I rediscovered it and made a new case for it using a simple trick I learnt when making my <a href="../light_fantastic/">Light Fantastic</a>, where you increase the capacity of the case by a few mm in each direction. I printed it again (in 2 parts as the first one failed near the end) and it worked really well.</p>
+<hr />
+<h2 id="challenges">Challenges</h2>
+<p>The most challenging part was making the case, as when I first designed it, I forgot to account for the printer's tolerance, so the mirror simply would not fit. At first, I wasn't sure why this happened, but I eventually measured the dimensions of the inside of the case and found that they were about a millimeter too small. In addition, creating my own modules for the mirror meant that I had to learn a whole new language first, as I had only touched JavaScript a few times before, and now I needed to learn DOM modelling, external API access, timeouts, status codes and a whole load more.</p>
+<hr />
+<h2 id="what-i-learned">What I Learned</h2>
+<ul>
+<li>How two-way mirrors work in display projects</li>
+<li>Setting up and configuring Linux-based systems</li>
+<li>Customising and extending existing open-source software</li>
+<li>Writing JavaScript modules using an existing API</li>
+<li>Designing 3D-printed parts with appropriate tolerances</li>
+<li>Learning from failed designs and improving them through iteration</li>
+</ul></div>
         
         
     </div>

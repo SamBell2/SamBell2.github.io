@@ -35,5 +35,5 @@ I am making it module by module, first breadboarding it to test it and make sure
 I am learning LOADS about the internal mechanisms of how computers actually work at the most detailed level, as well as soldering skills, PCB design, and electronic principles such as why pull-up/down resistors are actually necessary.
 ***
 ## More Details
-* [Clock Module](cpu_clock.md)
-* [ALU](cpu_alu.md)
+* [Clock Module](clock.md)
+* [ALU](alu.md)

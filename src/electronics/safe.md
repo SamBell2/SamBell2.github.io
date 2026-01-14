@@ -29,7 +29,7 @@ I wanted to make a safe with a door that locked, and you could only open it if y
 7. The electromagnet pulls of washers glued to the inside of the door to close it
 ***
 ## Challenges
-It was my first large DIY project so I had to learn to use a saw and a drill safely, as well as the electronics. The main problem I had with the electronics was that I had forgotten pull-down resistors, so the inputs were floating (no definite value) when the switches were off. I eventually Googled the problem and put the resistors in and it worked, but I didn't realise why until I started making my [CPU](cpu.md).
+It was my first large DIY project so I had to learn to use a saw and a drill safely, as well as the electronics. The main problem I had with the electronics was that I had forgotten pull-down resistors, so the inputs were floating (no definite value) when the switches were off. I eventually Googled the problem and put the resistors in and it worked, but I didn't realise why until I started making my [CPU](cpu/cpu.md).
 ***
 ## What I would change
 If I built it again now, I would change a few things:

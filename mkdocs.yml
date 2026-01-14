@@ -27,9 +27,9 @@ nav:
     - Morse Code Translator: programming/morse_code.md
   - Electronics:
     - CPU:
-      - Overview: electronics/cpu.md
-      - Clock Module: electronics/cpu_clock.md
-      - ALU: electronics/cpu_alu.md
+      - Overview: electronics/cpu/cpu.md
+      - Clock Module: electronics/cpu/clock.md
+      - ALU: electronics/cpu/alu.md
 #    - CPU: electronics/cpu.md
     - Safe: electronics/safe.md
   - Digital Making:

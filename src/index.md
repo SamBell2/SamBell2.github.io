@@ -12,7 +12,7 @@ tags: []
 ---
 
 ## About Me
-I am a 14 year old electronics and programming enthusiast. I love computer science and everything related to digital making, and have since I learnt the basics of Python when I was 8. Since then, it has become my main hobby and the direction I want my career to go in. In 2020, I got my first Raspberry Pi and learnt about electronics. Recently I realised that digital making and robotics combine both of my main interests, and those are what I'm focusing on now. I have made loads (82 that I still have records of!) of projects of varying degrees of difficulty. This portfolio contains the ones that I am most proud of.
+I am a 15 year old electronics and programming enthusiast. I love computer science and everything related to digital making, and have since I learnt the basics of Python when I was 8. Since then, it has become my main hobby and the direction I want my career to go in. In 2020, I got my first Raspberry Pi and learnt about electronics. Recently I realised that digital making and robotics combine both of my main interests, and those are what I'm focusing on now. I have made loads (82 that I still have records of!) of projects of varying degrees of difficulty. This portfolio contains the ones that I am most proud of.
 
 ---
 
@@ -21,7 +21,7 @@ I am a 14 year old electronics and programming enthusiast. I love computer scien
 | **Project**                       | **Description**                                                                     | **Link**                              |
 |-----------------------------------|-------------------------------------------------------------------------------------|---------------------------------------|
 | Chess Bot                         | I created a fully-functional lookahead evaluation chess bot                         | [View Project](programming/chess_bot.md) |
-| CPU                               | A simple 8-bit CPU that I am currently making                                       | [View Project](electronics/cpu.md)       |
+| CPU                               | A simple 8-bit CPU that I am currently making                                       | [View Project](electronics/cpu/cpu.md)       |
 | QR Code Generator                 | I made a v5 QR code generator in python                                             | [View Project](programming/qr_code_generator.md)       |
 | WER 2025                          | An international robotics competition where I came 1st in the UK in my age category | [More information](robotics/WER2025.md)  |
 
