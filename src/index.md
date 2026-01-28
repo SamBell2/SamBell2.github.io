@@ -43,7 +43,7 @@ I am a 15 year old electronics and programming enthusiast. I love computer scien
 ---
 
 ## Recent Achievements
-- **British champion** in an international robotics competition ([WER 2025](robotics/WER2025.md))
+- **British champion** and **3rd place worldwide** in an international robotics competition ([WER 2025](robotics/WER2025.md))
 - **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"} (I missed this year's deadline)
 - Predicted **Grade 9** in GCSE Computer Science
 
