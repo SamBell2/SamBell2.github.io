@@ -16,6 +16,14 @@ I am a 15 year old electronics and programming enthusiast. I love computer scien
 
 ---
 
+## Recent Achievements
+- **British champion** and **3rd place worldwide** in an international robotics competition ([WER 2025](robotics/WER2025.md))
+- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"} (I missed this year's deadline)
+- Predicted **Grade 9** in GCSE Computer Science
+
+---
+
+
 ## My Favourite Projects
 
 | **Project**                       | **Description**                                                                     | **Link**                              |
@@ -39,13 +47,6 @@ I am a 15 year old electronics and programming enthusiast. I love computer scien
 - **Problem Solving** - I have come across many challenges over my 5 years of making, and seeing as my family and friends aren't interested in coding or making, I have to solve everything myself using the internet, magazines and books. This has made me pretty good at problem solving.
 - **Curiosity** - I have always wanted to know how things work, and I usually find this out by making it (e.g. my [QR code generator](programming/qr_code_generator.md))
 - **Resilience** - I just refuse to give up, even if a problem takes me years to solve! I started many of my projects (such as the [Light Fantastic](digital_making/light_fantastic.md)) when I was younger and didn't have enough knowledge, skills or experience, but I kept coming back to them until I managed to finish them.
-
----
-
-## Recent Achievements
-- **British champion** and **3rd place worldwide** in an international robotics competition ([WER 2025](robotics/WER2025.md))
-- **Finalist** in [Cyber Switchup 2023](https://cyberswitchup.net/){target="_blank" rel="noopener"} (I missed this year's deadline)
-- Predicted **Grade 9** in GCSE Computer Science
 
 ---
 
