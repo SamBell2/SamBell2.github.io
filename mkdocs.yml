@@ -16,7 +16,6 @@ extra_css:
 markdown_extensions:
   - attr_list
 nav:
-#  - Home: index.md
   - Gallery: gallery.md
 #  - Categories: tags.md
   - Programming:
@@ -27,10 +26,9 @@ nav:
     - Morse Code Translator: programming/morse_code.md
   - Electronics:
     - CPU:
-      - Overview: electronics/cpu/cpu.md
+      - CPU Overview: electronics/cpu/cpu.md
       - Clock Module: electronics/cpu/clock.md
       - ALU: electronics/cpu/alu.md
-#    - CPU: electronics/cpu.md
     - Safe: electronics/safe.md
   - Digital Making:
     - Laptop: digital_making/laptop.md

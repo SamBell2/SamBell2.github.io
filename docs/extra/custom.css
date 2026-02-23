@@ -40,3 +40,8 @@ details summary::before {
 details[open] summary::before {
   content: "▼ ";
 }
+@media (max-width: 992px) {
+    .bs-sidebar {
+        display: none;
+    }
+  }

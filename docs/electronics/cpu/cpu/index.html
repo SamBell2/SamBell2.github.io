@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../img/favicon.ico">
 
     
-    <title>Overview - Sam's Portfolio</title>
+    <title>CPU Overview - Sam's Portfolio</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -126,7 +126,7 @@
         
             
 <li class="active">
-    <a href="./">Overview</a>
+    <a href="./">CPU Overview</a>
 </li>
 
         
@@ -241,6 +241,8 @@
                 
             <li class="second-level"><a href="#my-aim">My Aim</a></li>
                 
+            <li class="second-level"><a href="#isa">ISA</a></li>
+                
             <li class="second-level"><a href="#how-im-building-it">How I'm Building It</a></li>
                 
             <li class="second-level"><a href="#what-im-learning">What I'm Learning</a></li>
@@ -270,6 +272,178 @@
 <hr />
 <h2 id="my-aim">My Aim</h2>
 <p>I want to make an 8-bit CPU with 16 instructions. It will be fully Turing-complete. It will be able to do maths, store data, jump and branch to other parts of a program, and input and output to other devices. The instruction set I want to implement are adding, subtracting, NORing, right shifting, loading from RAM, storing to RAM, loading from a port, storing to a port, loading immediate values, adding immediate values, jumping around the program, branching to other parts of a program depending on a condition, and halting.</p>
+<hr />
+<h2 id="isa">ISA</h2>
+<p>I have made an ISA (Instruction Set Architecture) for my CPU. It shows all of the instructions that my CPU will be able to run, how to use them, what they do and what they compile to.</p>
+<table>
+<thead>
+<tr>
+<th>Opcode</th>
+<th>Usage</th>
+<th>Description</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADD</td>
+<td>ADD rX rY rZ</td>
+<td>rX + rY -&gt; rZ</td>
+<td>0000 XXXX YYYY ZZZZ</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>SUB rX rY rZ</td>
+<td>rX - rY -&gt; rZ</td>
+<td>0001 XXXX YYYY ZZZZ</td>
+</tr>
+<tr>
+<td>NOR</td>
+<td>NOR rX rY rZ</td>
+<td>rX with rY -&gt; rZ</td>
+<td>0010 XXXX YYYY ZZZZ</td>
+</tr>
+<tr>
+<td>RSH</td>
+<td>RSH rX    rZ</td>
+<td>right shift rX -&gt; rZ</td>
+<td>0011 XXXX 0000 ZZZZ</td>
+</tr>
+<tr>
+<td>LDR</td>
+<td>LDR rX rZ</td>
+<td>contents of ram at rX -&gt; rZ</td>
+<td>0100 XXXX 0000 ZZZZ</td>
+</tr>
+<tr>
+<td>STR</td>
+<td>STR rX rZ</td>
+<td>contents of rZ -&gt; ram at rX</td>
+<td>0101 XXXX ZZZZ 0000</td>
+</tr>
+<tr>
+<td>SMB</td>
+<td>SMB rX</td>
+<td>rX -&gt; MBR</td>
+<td>0110 XXXX 0000 0000</td>
+</tr>
+<tr>
+<td>INP</td>
+<td>INP pX rZ</td>
+<td>pX -&gt; rZ</td>
+<td>0111 XXXX 0000 ZZZZ</td>
+</tr>
+<tr>
+<td>OUT</td>
+<td>OUT pX rZ</td>
+<td>rZ -&gt; pX</td>
+<td>1000 XXXX ZZZZ 0000</td>
+</tr>
+<tr>
+<td>JMP</td>
+<td>JMP x</td>
+<td>PC + X -&gt; PC</td>
+<td>1001 00 XXXXXXXXXX</td>
+</tr>
+<tr>
+<td>BRA</td>
+<td>BRA c X</td>
+<td>if (c) then PC + X -&gt; PC</td>
+<td>1010 cc XXXXXXXXXX</td>
+</tr>
+<tr>
+<td>???</td>
+<td></td>
+<td>undecided</td>
+<td>1011</td>
+</tr>
+<tr>
+<td>???</td>
+<td></td>
+<td>undecided</td>
+<td>1100</td>
+</tr>
+<tr>
+<td>ADI</td>
+<td>ADI rX Y</td>
+<td>add Y to rX</td>
+<td>1101 XXXX YYYYYYYY</td>
+</tr>
+<tr>
+<td>LDI</td>
+<td>LDI rX Y</td>
+<td>Y -&gt; rX</td>
+<td>1110 XXXX YYYYYYYY</td>
+</tr>
+<tr>
+<td>HLT</td>
+<td>HLT</td>
+<td>halt</td>
+<td>1111 0000 0000 0000</td>
+</tr>
+</tbody>
+</table>
+<p>I also have some pseudo-instructions that the CPU itself cannot execute, but the assembler (the program that turns these commands into binary) will change into commands that can be executed.</p>
+<table>
+<thead>
+<tr>
+<th>Opcode</th>
+<th>Usage</th>
+<th>Description</th>
+<th>Resolves to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NOP</td>
+<td>NOP</td>
+<td>do nothing</td>
+<td>ADD r0 r0 r0</td>
+</tr>
+<tr>
+<td>CMP</td>
+<td>CMP rX rY</td>
+<td>compare and set flags</td>
+<td>SUB rX rY r0</td>
+</tr>
+<tr>
+<td>MOV</td>
+<td>MOV rX rZ</td>
+<td>copy rX to rZ</td>
+<td>ADD rX r0 rZ</td>
+</tr>
+<tr>
+<td>CLR</td>
+<td>CLR rX</td>
+<td>clear rX</td>
+<td>ADD r0 r0 rX</td>
+</tr>
+<tr>
+<td>INC</td>
+<td>INC rX</td>
+<td>increment rX</td>
+<td>ADI rX 1</td>
+</tr>
+<tr>
+<td>DEC</td>
+<td>DEC rX</td>
+<td>decrement rX</td>
+<td>ADI rX -1</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>NOT rX rZ</td>
+<td>invert rX -&gt; rZ</td>
+<td>NOR rX rX rZ</td>
+</tr>
+<tr>
+<td>LSH</td>
+<td>LSH rX rZ</td>
+<td>left shift rX -&gt; rZ</td>
+<td>ADD rX rX rZ</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="how-im-building-it">How I'm Building It</h2>
 <p>I am making it module by module, first breadboarding it to test it and make sure it works, then soldering it down to a <a href="https://www.amazon.co.uk/Prototype-Solderable-Breadboard-Electronics-Gold-Plated-2-Matte-Black/dp/B082KY5Y5Z?th=1" rel="noopener" target="_blank">solderable breadboard</a>. So far, I have completed the clock module, and mostly done the ALU. I am soldering the components to the top of the board so you can see them easily and the wires to the bottom of the board, just because I think it looks neater.</p>
