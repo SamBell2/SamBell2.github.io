@@ -20,6 +20,7 @@ nav:
 #  - Categories: tags.md
   - Programming:
     - Chess Bot: programming/chess_bot.md
+    - SamSpeak: programming/samspeak.md
     - QR Code Generator: programming/qr_code_generator.md
     - Scripted Journeys: programming/scripted_journeys.md
     - Sudoku Solver: programming/sudoku_solver.md

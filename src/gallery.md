@@ -8,10 +8,11 @@ tags: []
 
 <div class="gallery">
   <a href="../programming/chess_bot"><img src="../programming/images/chessbot.png" alt="Chess Bot">Chess Bot<em >(2025 - Aged 14)</em></a>
-  <a href="../electronics/cpu/cpu"><img src="../electronics/cpu/images/cpu.png" alt="CPU">CPU<em >(2025 - Aged 14)</em></a>
   <a href="../robotics/WER2025"><img src="../robotics/images/WER2025.png" alt="Robotics Competition">WER 2025<em >(2025 - Aged 14)</em></a>
+  <a href="../programming/samspeak"><img src="../programming/images/samspeak.png" alt="SamSpeak">SamSpeak<em >(2025 - Aged 14)</em></a>
   <a href="../digital_making/light_fantastic"><img src="../digital_making/images/lightfantastic.png" alt="Illuminated Button Matrix">Light Fantastic<em >(2023-2025 - Aged 12-14)</em></a>
   <a href="../programming/qr_code_generator"><img src="../programming/images/qrcode.png" alt="QR Code Generator">QR Code Generator<em >(2024 - Aged 13)</em></a>
+  <a href="../electronics/cpu/cpu"><img src="../electronics/cpu/images/cpu.png" alt="CPU">CPU<em >(2025 - Aged 14)</em></a>
   <a href="../digital_making/laptop"><img src="../digital_making/images/laptop.png" alt="Mini Laptop">Laptop<em >(2023-2025 - Aged 12-14)</em></a>
   <a href="../programming/scripted_journeys"><img src="../programming/images/scriptedjourneys.png" alt="Scripted Journeys">Scripted Journeys<em >(2024-2025 - Aged 13-14)</em></a>
   <a href="../digital_making/magic_mirror"><img src="../digital_making/images/magicmirror.png" alt="Magic Mirror">Magic Mirror<em >(2023-2025 - Aged 12-14)</em></a>
