@@ -32,6 +32,7 @@ nav:
       - ALU: electronics/cpu/alu.md
     - Safe: electronics/safe.md
   - Digital Making:
+    - Home Server: digital_making/home_server.md
     - Laptop: digital_making/laptop.md
     - Light Fantastic: digital_making/light_fantastic.md
     - Magic Mirror: digital_making/magic_mirror.md

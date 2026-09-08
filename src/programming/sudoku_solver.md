@@ -11,6 +11,7 @@ tags:
 # Sudoku Solver
 *2023 - Aged 12*
 ![An image of my sudoku solver](images/sudokusolver.png)
+*A completed sudoku* 
 ## Overview
 This was my first project related to computer intelligence: it uses a recursive backtracking algorithm to test every possible solution, rejecting wrong answers as early as possible. You can give it a partial 9x9 sudoku puzzle and it will solve it for you. I learnt a lot about how recursion can be used to solve search-based problems.
 ***

@@ -11,6 +11,7 @@ tags:
 # Magic Mirror
 *2023-2025 - Aged 12-14*
 ![An image of my magic mirror](images/magicmirror.png)
+*The magic mirror (the text is hard to see)*
 ## Overview
 A magic mirror is a mirror that has text and possibly images displayed on it. They typically work with a 2-way mirror where you can see through it as well as the reflection, and then just placing a screen behind it. I got the inspiration to make one from the [MagPi issue #93](https://magazine.raspberrypi.com/issues/93){target="_blank" rel="noopener"}, where they finished a guide on creating your own. This project involved learning a new programming language, 3D CAD, API calls and Linux setup.
 ***

@@ -12,6 +12,7 @@ tags:
 # Scripted Journeys
 *2024-2025 - Aged 13-14*
 ![A screenshot of Scripted Journeys](images/scriptedjourneys.png)
+*A section of the game in the middle of a fight*
 ## Overview
 Scripted Journeys is a text-based adventure game. I originally got the idea from a programming article which made a similar one, which I then improved on. I added multiple maps, which are defined as a set of XML files so users could add new ones if they want. I also added user settings and a few new features. Finally, the hardest part about the whole project was packaging and publishing it so people can actually play it.
 ### Links

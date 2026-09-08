@@ -9,6 +9,7 @@ tags:
 # Morse Code Translator
 *2021 - Aged 10*
 ![An image of my morse code translator](images/morse.png)
+*A section of the code and its output*
 ## Overview
 This was one of my first projects, it started just with taking input in English and translating it to morse code. I then expanded it by reversing it, so it could take input as morse code and return English. Next, I learnt the basics of OOP (Object Oriented Programming) and turned it into an object with 2 methods. Looking back, there was no real reason for this other than to experiment with how classes worked. I then used a Raspberry Pi and an LED so I could input English and the light would flash the morse code. Finally, I tried (but failed) to reverse the electronics, so I could point a camera at an LED and it would tell me what it was saying.
 ***
