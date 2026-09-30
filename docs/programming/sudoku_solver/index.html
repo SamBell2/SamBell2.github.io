@@ -1,279 +1,166 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio to display all of my programming and electronics projects.">
-    <meta name="author" content="Sam Bell">
-    <link rel="canonical" href="https://sambell2.github.io/programming/sudoku_solver/">
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
-    <title>Sudoku Solver - Sam's Portfolio</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
-    <link href="../../extra/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="My portfolio to display all of my programming and electronics projects." name="description"/>
+<meta content="Sam Bell" name="author"/>
+<link href="https://sambell2.github.io/programming/sudoku_solver/" rel="canonical"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Sudoku Solver - Sam's Portfolio</title>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet"/>
+<link href="//rsms.me/inter/inter.css" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="../../css/base.min.css" rel="stylesheet"/>
+<link href="../../css/cinder.min.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css" rel="stylesheet"/>
+<link href="../../extra/custom.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
-
-    
-
-     
-</head>
-
+<link href="../../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            
-              <a class="navbar-brand" href="../..">Sam's Portfolio</a>
-            
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../../gallery/">Gallery</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programming <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../chess_bot/">Chess Bot</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../samspeak/">SamSpeak</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../qr_code_generator/">QR Code Generator</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../scripted_journeys/">Scripted Journeys</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Sudoku Solver</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../morse_code/">Morse Code Translator</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">CPU</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../electronics/cpu/cpu/">CPU Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../electronics/cpu/clock/">Clock Module</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../electronics/cpu/alu/">ALU</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-<li >
-    <a href="../../electronics/safe/">Safe</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digital Making <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../digital_making/home_server/">Home Server</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/laptop/">Laptop</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/light_fantastic/">Light Fantastic</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/magic_mirror/">Magic Mirror</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robotics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../robotics/WER2025/">WER 2025</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../robotics/picar/">Picar S</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../robotics/camjam/">CamJam Robot</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-            </ul>
-        </div>
-    </div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<!-- Collapsed navigation -->
+<div class="navbar-header">
+<!-- Expander button -->
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!-- Main title -->
+<a class="navbar-brand" href="../..">Sam's Portfolio</a>
 </div>
-
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#sudoku-solver">Sudoku Solver</a></li>
-            <li class="second-level"><a href="#overview">Overview</a></li>
-                
-            <li class="second-level"><a href="#features">Features</a></li>
-                
-            <li class="second-level"><a href="#backtracking-algorithm">Backtracking Algorithm</a></li>
-                
-            <li class="second-level"><a href="#the-possibility-checker">The Possibility Checker</a></li>
-                
-            <li class="second-level"><a href="#the-gui">The GUI</a></li>
-                
-            <li class="second-level"><a href="#the-code">The Code</a></li>
-                
-            <li class="second-level"><a href="#challenges">Challenges</a></li>
-                
-            <li class="second-level"><a href="#what-i-learned">What I Learned</a></li>
-                
-    </ul>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li>
+<a href="../..">Home</a>
+</li>
+<li>
+<a href="../../gallery/">Gallery</a>
+</li>
+<li class="dropdown active">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../chess_bot/">Chess Bot</a>
+</li>
+<li>
+<a href="../20hourproject/">20 Hour Project</a>
+</li>
+<li>
+<a href="../samspeak/">SamSpeak</a>
+</li>
+<li>
+<a href="../qr_code_generator/">QR Code Generator</a>
+</li>
+<li>
+<a href="../scripted_journeys/">Scripted Journeys</a>
+</li>
+<li class="active">
+<a href="./">Sudoku Solver</a>
+</li>
+<li>
+<a href="../morse_code/">Morse Code Translator</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a href="" tabindex="-1">CPU</a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../electronics/cpu/cpu/">CPU Overview</a>
+</li>
+<li>
+<a href="../../electronics/cpu/clock/">Clock Module</a>
+</li>
+<li>
+<a href="../../electronics/cpu/alu/">ALU</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../../electronics/safe/">Safe</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Digital Making <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../digital_making/home_server/">Home Server</a>
+</li>
+<li>
+<a href="../../digital_making/laptop/">Laptop</a>
+</li>
+<li>
+<a href="../../digital_making/light_fantastic/">Light Fantastic</a>
+</li>
+<li>
+<a href="../../digital_making/magic_mirror/">Magic Mirror</a>
+</li>
+<li>
+<a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Robotics <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../robotics/WER2025/">WER 2025</a>
+</li>
+<li>
+<a href="../../robotics/picar/">Picar S</a>
+</li>
+<li>
+<a href="../../robotics/camjam/">CamJam Robot</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+<ul class="nav bs-sidenav">
+<li class="first-level active"><a href="#sudoku-solver">Sudoku Solver</a></li>
+<li class="second-level"><a href="#overview">Overview</a></li>
+<li class="second-level"><a href="#features">Features</a></li>
+<li class="second-level"><a href="#backtracking-algorithm">Backtracking Algorithm</a></li>
+<li class="second-level"><a href="#the-possibility-checker">The Possibility Checker</a></li>
+<li class="second-level"><a href="#the-gui">The GUI</a></li>
+<li class="second-level"><a href="#the-code">The Code</a></li>
+<li class="second-level"><a href="#challenges">Challenges</a></li>
+<li class="second-level"><a href="#what-i-learned">What I Learned</a></li>
+</ul>
 </div></div>
-        <div class="col-md-9" role="main">
-
+<div class="col-md-9" role="main">
 <h1 id="sudoku-solver">Sudoku Solver</h1>
 <p><em>2023 - Aged 12</em>
-<img alt="An image of my sudoku solver" src="../images/sudokusolver.png" />
+<img alt="An image of my sudoku solver" src="../images/sudokusolver.png"/>
 <em>A completed sudoku</em> </p>
 <h2 id="overview">Overview</h2>
 <p>This was my first project related to computer intelligence: it uses a recursive backtracking algorithm to test every possible solution, rejecting wrong answers as early as possible. You can give it a partial 9x9 sudoku puzzle and it will solve it for you. I learnt a lot about how recursion can be used to solve search-based problems.</p>
-<hr />
+<hr/>
 <h2 id="features">Features</h2>
 <ul>
 <li>Solves 9x9 sudoku puzzles</li>
@@ -281,21 +168,20 @@
 <li>GUI for easy use</li>
 <li>Gives hints to the next square</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="backtracking-algorithm">Backtracking Algorithm</h2>
 <p>The solver uses a recursive backtracking algorithm to find the solution. The program begins at the first empty square, setting it to 1. It then checks if the puzzle is impossible (i.e. the same number is found twice in a single row, column or 3x3 box). If the puzzle is possible, the solver then calls itself to solve this new puzzle. If, however, the new puzzle is not possible, it changes the 1 to a 2 and checks again. This repeats until either it finds a possible number or gets to 9. If it gets to a 9, then some previous square is wrong, so it blanks the square out and returns to the solver above it. The solver above it now knows that the numbers it has are not possible, so it adds 1 to the last number and tries again. This whole recursive process keeps going until either the whole puzzle is complete, or it has tried every combination and none of them work. If this is the case, it reports an unsolvable sudoku.</p>
-<hr />
+<hr/>
 <h2 id="the-possibility-checker">The Possibility Checker</h2>
 <p>This loops over each square of the puzzle, where it checks if it is empty. If not, if it is in the set of numbers in this row, then it says it is impossible (the same number cannot occur twice in the same row). If it is not in the set, then it is added to the set. It then does the same with columns, and then blocks.</p>
-<hr />
+<hr/>
 <h2 id="the-gui">The GUI</h2>
 <p>I used Tkinter to make the GUI as it is quite simple. First, I made a <code>Frame</code> containing 81 <code>Entry</code>s in a grid layout. The variables holding these Entries were held in a 2D array mirroring the puzzle. I also added a <code>Progressbar</code>and 3 <code>Button</code>s in another <code>Frame</code>. When you press the Clear button, it empties the entire sudoku. When you press the Hint button, it solves the entire puzzle and tells you the next number. When you press Solve, it solves the puzzle, keeping track of the number of iterations and recursions done, then runs the progress bar for a few seconds (it is relative to the number of steps done) before telling you the result. I didn't need the progress bar, and the entire puzzle is done before the progress bar even starts, but I added it to learn more about GUI elements.</p>
-<hr />
+<hr/>
 <h2 id="the-code">The Code</h2>
 <p>You can see the full implementation below, including the solver, validity checking and the GUI.</p>
 <details>
 <summary style="cursor: pointer">Show/Hide Code</summary>
-
 <pre><code class="language-python">#!/usr/bin/env python3
 
 ##  IMPORTS  ##
@@ -315,14 +201,14 @@ def board_to_list(board):
     for row in range(9):
         for item in range(9):
             try:
-                if (board[row][item].get() == &quot;&quot;):
+                if (board[row][item].get() == ""):
                     entryboard[row].append(-1)
                 elif not(int(board[row][item].get()) in range(1,10)):
                     raise ValueError
                 else:
                     entryboard[row].append(int(board[row][item].get()))
             except:
-                showinfo(message=&quot;Invalid sudoku&quot;)
+                showinfo(message="Invalid sudoku")
                 return False
     return entryboard
 
@@ -391,7 +277,7 @@ def handle_solve_click(event, board, pb):
     if not entryboard:
         return
     if not(is_possible(entryboard)):
-        showinfo(message=&quot;Invalid sudoku&quot;)
+        showinfo(message="Invalid sudoku")
         return False
     solve_sudoku(entryboard)
     time = count / 5
@@ -409,13 +295,13 @@ def show_solution(entryboard, board, pb):
         for item in range(9):
             board[row][item].delete(0, tk.END)
             board[row][item].insert(0, entryboard[row][item])
-    print(&quot;+&quot; + &quot;---+&quot;*9)
+    print("+" + "---+"*9)
     for i, row in enumerate(entryboard):
-        print((&quot;|&quot; + &quot; {}   {}   {} |&quot;*3).format(*[x if x != -1 else &quot; &quot; for x in row]))
+        print(("|" + " {}   {}   {} |"*3).format(*[x if x != -1 else " " for x in row]))
         if i % 3 == 2:
-            print(&quot;+&quot; + &quot;---+&quot;*9)
+            print("+" + "---+"*9)
         else:
-            print(&quot;+&quot; + &quot;   +&quot;*9)
+            print("+" + "   +"*9)
     pb.stop()
     pb['value'] = 100
 
@@ -424,7 +310,7 @@ def handle_clear_click(event, board, pb, progress):
         for item in range(9):
             board[row][item].delete(0, tk.END)
     pb['value'] = 0
-    progress['text'] = &quot;0.0%&quot;
+    progress['text'] = "0.0%"
 
 def handle_hint_click(event, board):
     entryboard = board_to_list(board)
@@ -432,7 +318,7 @@ def handle_hint_click(event, board):
     if not(entryboard):
         return False
     if not(is_possible(entryboard)):
-        showinfo(message=&quot;possible&quot;)
+        showinfo(message="possible")
         return False
     solve_sudoku(entryboard)
     for row in range(9):
@@ -441,19 +327,19 @@ def handle_hint_click(event, board):
                 board[row][item].delete(0, tk.END)
                 board[row][item].insert(0, entryboard[row][item])
                 return True
-    showinfo(message=&quot;Already solved&quot;)
+    showinfo(message="Already solved")
 
 def update_progress_bar():
     if pb['value'] &lt; 100:
-        progress['text'] =  f&quot;{pb['value']}%&quot;
+        progress['text'] =  f"{pb['value']}%"
         window.after(10, update_progress_bar)
     else:
         pb['value'] = 100
-        progress['text'] = &quot;Complete&quot;
+        progress['text'] = "Complete"
 
 ##  MAIN LOOP  ##
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     window = tk.Tk()
     board = [[] for _ in range(9)]
     sudoku_frame = tk.Frame(relief=tk.SUNKEN, borderwidth=5)
@@ -466,28 +352,27 @@ if __name__ == &quot;__main__&quot;:
     progress_frame = tk.Frame()
     pb = ttk.Progressbar(master=progress_frame, orient='horizontal', mode='determinate', length=280)
     pb.grid(row=0, column=0)
-    progress = tk.Label(master=progress_frame, text=&quot;0.0%&quot;)
+    progress = tk.Label(master=progress_frame, text="0.0%")
     progress.grid(row=1, column=0)
     progress_frame.pack(pady=15)
     button_frame = tk.Frame(relief=tk.RIDGE, borderwidth=5)
-    solve_btn = tk.Button(master=button_frame, text=&quot;Solve&quot;, relief=tk.FLAT, borderwidth=2)
-    solve_btn.bind(&quot;&lt;Button-1&gt;&quot;, lambda event: handle_solve_click(event, board, pb))
+    solve_btn = tk.Button(master=button_frame, text="Solve", relief=tk.FLAT, borderwidth=2)
+    solve_btn.bind("&lt;Button-1&gt;", lambda event: handle_solve_click(event, board, pb))
     solve_btn.grid(row=0,column=0)
-    clear_btn = tk.Button(master=button_frame, text=&quot;Clear&quot;, relief=tk.FLAT, borderwidth=2)
-    clear_btn.bind(&quot;&lt;Button-1&gt;&quot;, lambda event: handle_clear_click(event, board, pb, progress))
+    clear_btn = tk.Button(master=button_frame, text="Clear", relief=tk.FLAT, borderwidth=2)
+    clear_btn.bind("&lt;Button-1&gt;", lambda event: handle_clear_click(event, board, pb, progress))
     clear_btn.grid(row=0, column=1)
-    hint_btn = tk.Button(master=button_frame, text=&quot;Hint&quot;, relief=tk.FLAT, borderwidth=2)
-    hint_btn.bind(&quot;&lt;Button-1&gt;&quot;, lambda event: handle_hint_click(event, board))
+    hint_btn = tk.Button(master=button_frame, text="Hint", relief=tk.FLAT, borderwidth=2)
+    hint_btn.bind("&lt;Button-1&gt;", lambda event: handle_hint_click(event, board))
     hint_btn.grid(row=0, column=3)
     button_frame.pack()
     window.mainloop()
 </code></pre>
-
 </details>
-<hr />
+<hr/>
 <h2 id="challenges">Challenges</h2>
 <p>The most challenging part of the whole process was actually checking if a solution was impossible. This was mostly because the 3x3 blocks were really hard to check through neatly, without hardcoding a check for each square. If I come back to this project in the future, I will probably remove the progress bar and instead update the grid as it is solved, showing the user exactly how it works. However, this would mean either making the solver directly access frontend code, or restructuring it to yield intermediate states.</p>
-<hr />
+<hr/>
 <h2 id="what-i-learned">What I Learned</h2>
 <ul>
 <li>How recursive backtracking works to explore every option</li>
@@ -495,91 +380,52 @@ if __name__ == &quot;__main__&quot;:
 <li>How to separate backend logic from frontend displays</li>
 <li>How to make simple GUIs</li>
 </ul></div>
-        
-        
-    </div>
-
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
-
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    <script>var base_url = "../.."</script>
-    
-    <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
-
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
 </div>
-    </body>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/bootstrap-3.0.3.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>var base_url = "../.."</script>
+<script src="../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>

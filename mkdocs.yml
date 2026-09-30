@@ -9,17 +9,19 @@ theme:
   disable_nav_previous_next: true
   disable_footer: true
 plugins:
-#  - with-pdf
+  - with-pdf
 #  - tags
 extra_css:
   - extra/custom.css
 markdown_extensions:
   - attr_list
 nav:
+  - Home: index.md
   - Gallery: gallery.md
 #  - Categories: tags.md
   - Programming:
     - Chess Bot: programming/chess_bot.md
+    - 20 Hour Project: programming/20hourproject.md
     - SamSpeak: programming/samspeak.md
     - QR Code Generator: programming/qr_code_generator.md
     - Scripted Journeys: programming/scripted_journeys.md

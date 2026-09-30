@@ -1,279 +1,169 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio to display all of my programming and electronics projects.">
-    <meta name="author" content="Sam Bell">
-    <link rel="canonical" href="https://sambell2.github.io/programming/morse_code/">
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-
-    
-    <title>Morse Code Translator - Sam's Portfolio</title>
-    
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
-    <link href="../../css/cinder.min.css" rel="stylesheet">
-
-    
-        
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
-        
-    
-    <link href="../../extra/custom.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="My portfolio to display all of my programming and electronics projects." name="description"/>
+<meta content="Sam Bell" name="author"/>
+<link href="https://sambell2.github.io/programming/morse_code/" rel="canonical"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Morse Code Translator - Sam's Portfolio</title>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet"/>
+<link href="//rsms.me/inter/inter.css" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="../../css/base.min.css" rel="stylesheet"/>
+<link href="../../css/cinder.min.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css" rel="stylesheet"/>
+<link href="../../extra/custom.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
-
-    
-
-     
-</head>
-
+<link href="../../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body>
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
-
-            <!-- Main title -->
-
-            
-              <a class="navbar-brand" href="../..">Sam's Portfolio</a>
-            
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../../gallery/">Gallery</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programming <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../chess_bot/">Chess Bot</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../samspeak/">SamSpeak</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../qr_code_generator/">QR Code Generator</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../scripted_journeys/">Scripted Journeys</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../sudoku_solver/">Sudoku Solver</a>
-</li>
-
-                        
-                            
-<li class="active">
-    <a href="./">Morse Code Translator</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">CPU</a>
-    <ul class="dropdown-menu">
-        
-            
-<li >
-    <a href="../../electronics/cpu/cpu/">CPU Overview</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../electronics/cpu/clock/">Clock Module</a>
-</li>
-
-        
-            
-<li >
-    <a href="../../electronics/cpu/alu/">ALU</a>
-</li>
-
-        
-    </ul>
-  </li>
-
-                        
-                            
-<li >
-    <a href="../../electronics/safe/">Safe</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Digital Making <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../digital_making/home_server/">Home Server</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/laptop/">Laptop</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/light_fantastic/">Light Fantastic</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/magic_mirror/">Magic Mirror</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Robotics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li >
-    <a href="../../robotics/WER2025/">WER 2025</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../robotics/picar/">Picar S</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../../robotics/camjam/">CamJam Robot</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                            <i class="fas fa-search"></i> Search
-                        </a>
-                    </li>
-            </ul>
-        </div>
-    </div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<!-- Collapsed navigation -->
+<div class="navbar-header">
+<!-- Expander button -->
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!-- Main title -->
+<a class="navbar-brand" href="../..">Sam's Portfolio</a>
 </div>
-
-    <div class="container">
-        
-        
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#morse-code-translator">Morse Code Translator</a></li>
-            <li class="second-level"><a href="#overview">Overview</a></li>
-                
-            <li class="second-level"><a href="#the-translator">The Translator</a></li>
-                
-            <li class="second-level"><a href="#the-object">The Object</a></li>
-                
-            <li class="second-level"><a href="#the-electronics">The Electronics</a></li>
-                
-            <li class="second-level"><a href="#improvements">Improvements</a></li>
-                
-    </ul>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li>
+<a href="../..">Home</a>
+</li>
+<li>
+<a href="../../gallery/">Gallery</a>
+</li>
+<li class="dropdown active">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../chess_bot/">Chess Bot</a>
+</li>
+<li>
+<a href="../20hourproject/">20 Hour Project</a>
+</li>
+<li>
+<a href="../samspeak/">SamSpeak</a>
+</li>
+<li>
+<a href="../qr_code_generator/">QR Code Generator</a>
+</li>
+<li>
+<a href="../scripted_journeys/">Scripted Journeys</a>
+</li>
+<li>
+<a href="../sudoku_solver/">Sudoku Solver</a>
+</li>
+<li class="active">
+<a href="./">Morse Code Translator</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li class="dropdown-submenu">
+<a href="" tabindex="-1">CPU</a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../electronics/cpu/cpu/">CPU Overview</a>
+</li>
+<li>
+<a href="../../electronics/cpu/clock/">Clock Module</a>
+</li>
+<li>
+<a href="../../electronics/cpu/alu/">ALU</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="../../electronics/safe/">Safe</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Digital Making <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../digital_making/home_server/">Home Server</a>
+</li>
+<li>
+<a href="../../digital_making/laptop/">Laptop</a>
+</li>
+<li>
+<a href="../../digital_making/light_fantastic/">Light Fantastic</a>
+</li>
+<li>
+<a href="../../digital_making/magic_mirror/">Magic Mirror</a>
+</li>
+<li>
+<a href="../../digital_making/wildlife_camera/">Wildlife Camera</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Robotics <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li>
+<a href="../../robotics/WER2025/">WER 2025</a>
+</li>
+<li>
+<a href="../../robotics/picar/">Picar S</a>
+</li>
+<li>
+<a href="../../robotics/camjam/">CamJam Robot</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+<ul class="nav bs-sidenav">
+<li class="first-level active"><a href="#morse-code-translator">Morse Code Translator</a></li>
+<li class="second-level"><a href="#overview">Overview</a></li>
+<li class="second-level"><a href="#the-translator">The Translator</a></li>
+<li class="second-level"><a href="#the-object">The Object</a></li>
+<li class="second-level"><a href="#the-electronics">The Electronics</a></li>
+<li class="second-level"><a href="#improvements">Improvements</a></li>
+</ul>
 </div></div>
-        <div class="col-md-9" role="main">
-
+<div class="col-md-9" role="main">
 <h1 id="morse-code-translator">Morse Code Translator</h1>
 <p><em>2021 - Aged 10</em>
-<img alt="An image of my morse code translator" src="../images/morse.png" />
+<img alt="An image of my morse code translator" src="../images/morse.png"/>
 <em>A section of the code and its output</em></p>
 <h2 id="overview">Overview</h2>
 <p>This was one of my first projects, it started just with taking input in English and translating it to morse code. I then expanded it by reversing it, so it could take input as morse code and return English. Next, I learnt the basics of OOP (Object Oriented Programming) and turned it into an object with 2 methods. Looking back, there was no real reason for this other than to experiment with how classes worked. I then used a Raspberry Pi and an LED so I could input English and the light would flash the morse code. Finally, I tried (but failed) to reverse the electronics, so I could point a camera at an LED and it would tell me what it was saying.</p>
-<hr />
+<hr/>
 <h2 id="the-translator">The Translator</h2>
 <p>I defined an enormous Python dictionary relating letters, numbers and symbols to their corresponding morse codes:</p>
 <pre><code class="language-Python">{'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..', 'e': '.', 'f': '..-.', 'g': '--.', 'h': '....', 'i': '..', 'j': '.---', 'k': '-.-', 'l': '.-..', 'm': '--', 'n': '-.', 'o': '---', 'p': '.--.', 'q': '--.-', 'r': '.-.', 's': '...', 't': '-', 'u': '..-', 'v': '..-', 'w': '.--', 'x': '-..-', 'y': '-.--', 'z': '--..', '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....', '6': '-....', '7': '--...', '8': '---..', '9': '----.', '0': '-----', '?': '..--..', '!': '-.-.--', '.': '.-.-.-', ',': '--..--', ' ': ' '}
 </code></pre>
 <p>I then looped through the characters in the string to translate, converted them to lowercase, and retrieved the code. If the character wasn't in the map, I used a <code>#</code> symbol. I then added the code to a string, followed by a space. Finally, I returned the string. To convert it back into English, I did something similar. I used a reversed version of the dictionary, so it mapped the morse codes to the letter, then I split the morse message into words. I then split each word into characters, retrieved the letter for each morse character, and added a space between each word.</p>
-<hr />
+<hr/>
 <h2 id="the-object">The Object</h2>
 <p>This was my first attempt at object-orientation, and I didn't use it properly. I just used a class to hold two methods - <code>toMorse</code> and <code>fromMorse</code> - and that was it. I made a <code>Translator</code> class, which I then instantiated, then called the methods on the instance. To be precise, here is the code I had at this stage:</p>
 <pre><code class="language-Python">class Translator():
@@ -302,17 +192,17 @@
             message_in_english += ' '
         return message_in_english
 
-if __name__ == &quot;__main__&quot;:
+if __name__ == "__main__":
     translator = Translator()
-    msg = input(&quot;Enter message to translate to morse: &quot;)
+    msg = input("Enter message to translate to morse: ")
     print(translator.toMorse(msg))
-    msg = input(&quot;Enter message in morse to translate to English: &quot;)
+    msg = input("Enter message in morse to translate to English: ")
     print(translator.fromMorse(msg))
 </code></pre>
-<hr />
+<hr/>
 <h2 id="the-electronics">The Electronics</h2>
 <p>Unfortunately, I lost the code I had for the lights, but I think I just attached a simple LED to my Raspberry Pi and blinked it. For a dot, it would light up for 0.1 seconds, then turn off again. For a dash, it was 0.5 seconds. The light was off for 0.3 seconds between each dot and dash, and it was off for 1 second between letters. Between words, I think it stayed dark for 2 seconds. I could certainly have sped this up, but I wanted to make a reader and I thought it would be easier to have slower flashes. I never managed to make the reader, because I wanted to use a camera, not a light dependant resistor, so I could make an app for a mobile phone. I asked StackOverflow how to do this (you can see my question <a href="https://stackoverflow.com/questions/68589312/can-you-translate-a-flashing-light-into-morse-code" rel="noopener" target="_blank">here</a> - I didn't know how to ask questions well then) and there was an amazing <a href="https://stackoverflow.com/a/68859624/16398595" rel="noopener" target="_blank">answer</a> involving calculating frame-by-frame average brightness levels, converting it to a binary signal with a threshold value, retrieving the length of each flash and the time between flashes, classifying them with a threshold, and reconstructing the signal. Sadly, I wasn't good enough at programming back then to understand the idea, but it was a great answer.</p>
-<hr />
+<hr/>
 <h2 id="improvements">Improvements</h2>
 <p>If I was to do this project again, I would fix a few things:  </p>
 <ul>
@@ -322,91 +212,52 @@ if __name__ == &quot;__main__&quot;:
 <li>The normal version would have a maximised window that changes colour between black and white to flash, and would use the camera to detect flashes</li>
 <li>I would try to make it into a mobile phone app so people can type a message in and point the screen at a friend, who would zoom in on the screen and would recieve the message.</li>
 </ul></div>
-        
-        
-    </div>
-
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../js/bootstrap-3.0.3.min.js"></script>
-
-    
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
-        
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    <script>var base_url = "../.."</script>
-    
-    <script src="../../js/base.js"></script>
-    <script src="../../search/main.js"></script>
-
-    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
 </div>
-    </body>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../../js/bootstrap-3.0.3.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>var base_url = "../.."</script>
+<script src="../../js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
